@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="6969cbaa-896b-4fea-8d6b-dcb64822843b"
+  name="SharpPcap"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="5d074ba6-babd-40fa-9f93-a49fd198adab"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSharpPcap"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c90b9745-3b84-4578-9e2d-459f6809cb91"
+        LastKnownName="WinPcap"
+        LastKnownLocation="Package4_0855.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="35015a84-594b-451e-9a69-e8ece9c99fb4"
+        name="PosixTimeval"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b5efcbfe-cc2c-4ad5-836a-6aca470f9528"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DPosixTimeval"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="78dec052-687b-4bd0-af05-071f7837195c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8fe301e9-34de-4377-8a9f-521f710aaae2">
+                <propertyInstance
+                  Id="23a17918-fa3a-4f42-a63f-9c7cd6d0d4ef"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6062d14a-4623-44a8-aa2c-f0ab2e09d4a3">
+                <propertyInstance
+                  Id="fc74ea24-3ea1-4d72-869c-91d4fd9c1c2a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a7bab2ac-4c62-4d90-aa9c-3a24902c7d5d">
+                <propertyInstance
+                  Id="04b456db-e115-4a47-90c7-9cfa03a8ed47"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cfc95347-4e3c-4d9b-a958-b2357f8a8b7b">
+                <propertyInstance
+                  Id="902bc3f7-6999-4ac1-9775-30b463e036b5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1622ab2f-d786-43d2-b215-c7b189a2a8b7">
+                <propertyInstance
+                  Id="3522eb10-f462-4d6b-bd93-4869c3e6e240"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="1273f744-5d38-497b-9e4a-99c3487918aa"
+        name="DeviceMode"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="59633c1a-f449-4c19-869f-fe2a5af103f4"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="75c89095-688c-47ef-9a6e-b6860914ec91"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b9348856-c654-459f-a61a-a121c2d807a4">
+                <propertyInstance
+                  Id="7d30b1c7-e949-488f-887b-8ddc82c79470"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6fe78cb8-fdfb-4330-b54d-a9f0707c717b">
+                <propertyInstance
+                  Id="df560ed6-cac7-4138-917a-400378cd2053"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="77ad187c-86b1-4c71-84b7-4a3075f6c3cb">
+                <propertyInstance
+                  Id="f7196b76-01f0-41b3-9dc8-1b7d21d193a3"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="2875c3b4-6709-46b4-a137-ae4ce0ac33c3"
+        name="ICaptureDevice"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="4251882e-6723-49b0-9217-6e141f4d966f"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DICaptureDevice"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="cdbd72a5-96cb-4837-a57b-d0f2c16ed309"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e220da8e-6d6a-4324-bf27-ab5a88e6574a">
+                <propertyInstance
+                  Id="f9feebac-9f50-47d2-92c8-efee5ea544e6"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e028d179-c25a-433a-8789-5bbd7d3205a2">
+                <propertyInstance
+                  Id="d4723fc2-d0ed-4068-a233-4ee6b4e25cb3"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="09b3152d-0ca8-4a16-9aee-8a35bf186022">
+                <propertyInstance
+                  Id="c410442f-d33f-4bc4-afb3-ddc927b4bd24"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4d125adf-b3b2-44ba-afaf-90fdb27d432e">
+                <propertyInstance
+                  Id="c89d08a3-a7e0-43be-8418-7ffb08e65a6e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="eb160920-6e72-4b61-a2ed-0d09f22e4c92"
+        name="CaptureEventArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="dbb1c34b-defc-4faa-ae9c-5b564ddf3146"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DCaptureEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="cee4574b-27a9-422f-a056-2782f2850838"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1fee27d5-00d7-49b6-a53c-39456bd4a31b">
+                <propertyInstance
+                  Id="b4f726c9-a4fe-4ec7-b0f4-0784f4b5af83"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="058784fc-2cb0-4152-8b9d-fa5150a6c838">
+                <propertyInstance
+                  Id="179d9cdd-78dc-4a3b-8f62-294f10e3f40d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c4583956-d263-4ee5-8097-e1ab4d6e154c">
+                <propertyInstance
+                  Id="bfbe1ff6-14b3-443a-b38d-960d7d215674"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="82e3484d-b93d-45d1-998f-4769b42698b4">
+                <propertyInstance
+                  Id="dd8878eb-a163-4090-8e02-aea63f1fdaac"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c115ceed-a155-408c-ba18-6db09f0509b6">
+                <propertyInstance
+                  Id="88fbae9c-f9a5-4d77-9702-4de58887f14f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

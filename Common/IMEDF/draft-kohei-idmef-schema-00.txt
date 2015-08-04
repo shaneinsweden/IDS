@@ -1,0 +1,1854 @@
+From: http://www.ietf.org/internet-drafts/draft-kohei-idmef-schema-00.txt
+Title: XML Schema definition for IDMEF message
+By: IETF Intrusion Detection Exchange Format Working Group
+Reference: IETF Internet Draft 'draft-kohei-idmef-schema-00.txt'
+Date: February 9, 2004
+See also: http://xml.coverpages.org/idmef.html
+          Intrusion Detection Message Exchange Format
+
+-------------------------------------------------------------------------
+
+Network Working Group                                   Kohei OHTA
+INTERNET-DRAFT                                Cyber Solutions Inc.
+Expires: August 9, 2004                            February 9 2004
+
+
+
+                XML Schema definition for IDMEF message
+                   <draft-kohei-idmef-schema-00.txt>
+
+Status of this Memo
+
+   Status of this Memo
+
+      This document is an Internet-Draft and is in full conformance with
+      all provisions of Section 10 of RFC2026[1].
+
+      Internet-Drafts are working documents of the Internet Engineering
+      Task Force (IETF), its areas, and its working groups.  Note that
+      other groups may also distribute working documents as Internet-
+      Drafts.
+
+      Internet-Drafts are draft documents valid for a maximum of six months
+      and may be updated, replaced, or obsoleted by other documents at any
+      time.  It is inappropriate to use Internet-Drafts as reference
+      material or to cite them other than as "work in progress."
+
+      The list of current Internet-Drafts can be accessed at
+      http://www.ietf.org/ietf/1id-abstracts.txt.
+
+      The list of Internet-Draft Shadow Directories can be accessed at
+      http://www.ietf.org/shadow.html.
+
+      This Internet-Draft will expire on August 9, 2004.
+
+   Copyright Notice
+
+      Copyright (C) The Internet Society (2004).  All Rights Reserved.
+
+
+
+Abstract
+
+   The purpose of this document is to define a message format of IDMEF
+   in XML Schema.
+
+Conventions used in this document
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+
+
+
+Expires: August 9, 2004                                         [Page 1]
+
+Internet Draft                                          February 9, 2004
+
+
+   "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this
+   document are to be interpreted as described in RFC-2119 [2].
+
+   IDMEF message is defined in Internet-draft of IDWG working group. And
+   this document is based on the draft [3]
+
+Table of Contents
+
+    1. Introduction...................................................3
+    2. Namespace......................................................3
+    3. White space and language support...............................3
+    4. Data type mapping..............................................4
+       4.1 IDMEF INTEGER..............................................4
+       4.2 IDMEF REAL.................................................4
+       4.3 IDMEF CAHRACTER and STRINGS................................4
+       4.4 IDMEF BYTES................................................4
+       4.5 IDMEF Enumeration..........................................4
+       4.6 IDMEF DATETIME.............................................5
+       4.7 IDMEF NTPSTAMP.............................................5
+       4.8 PORTLIST...................................................6
+    5. Definition.....................................................6
+    6. Issues.........................................................30
+    6. Intellectual Property..........................................31
+    References........................................................32
+    Security Considerations...........................................32
+    Author's Addresses................................................32
+    Full Copyright Statement .........................................32
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Expires: August 9, 2004                                         [Page 2]
+
+Internet Draft                                          February 9, 2004
+
+
+1. Introduction
+
+   This document is definition of IDMEF message in XML Schema, which is
+   currently defined by DTD.
+
+   All data model and basic definitions are according to the original
+   definition in DTD.
+
+2. Namespace
+
+   In the original definition in DTD, "urn:iana:xml:ns:idmef" is used as
+   the namespace and defined as attribute.
+
+   In this definition in XML Schema uses "urn:ietf:params:xml:ns:idmef"
+   as the namespace according to the document "The IETF XML Registry"
+   [4]
+
+   <xs:schema
+      targetNamespace="urn:iana:xml:ns:idmef"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+      xmlns:idmef="urn:iana:xml:ns:idmef">
+
+3. White space and language support
+
+
+   As same as original DTD definition, XML Schema support following two
+   types of global attribute. In this definition, one group attribute id
+   defined for both of these, and applied for string type data.
+
+
+   mespace="http://www.w3.org/XML/1998/namespace"
+           schemaLocation="http://www.w3g.org/XML/2001/xml.xsd"/>
+
+   <xs:attributeGroup name="global">
+           <xs:attribute ref="xml:space"/>
+           <xs:attribute ref="xml:lang"/>
+   </xs:attributeGroup>
+
+4. Data type mapping
+
+
+   In original definition, some types of data are defined. But, those
+   are not reflected into actual DTD definition due to the limitation of
+   DTD itself.
+
+   In this document, those are defined with data types in XML Schema.
+
+
+
+
+
+Expires: August 9, 2004                                         [Page 3]
+
+Internet Draft                                          February 9, 2004
+
+
+4.1. IDMEF INTEGER
+
+
+   Integer attributes are represented by the INTEGER data type. Integer
+   data MUST be encoded in Base 10 or Base 16.
+
+   So, it is defined as union of built-in integer and hexBinary of XML
+   Schema.
+
+   <xs:simpleType name="INTEGER">
+     <xs:union memberTypes="xs:int xs:hexBinary"/>
+   </xs:simpleType>
+
+
+4.2. IDMEF REAL
+
+
+   Real (floating-point) attributes are represented by the REAL data
+   type. Real data MUST be encoded in Base 10.
+
+   This type can be supported by built-in float type of XML Schema.
+
+
+4.3. IDMEF CAHRACTER and STRINGS
+
+
+   Single-character attributes are represented by the CHARACTER data
+   type. Multi-character attributes of known length are represented by
+   the STRING data type.
+
+   STRINGS is defined with built-in string type of XML, which in
+   extended with global attribute for space and language support.
+
+   <xs:complexType name="STRINGS">
+     <xs:simpleContent>
+     <xs:extension base="xs:string">
+       <xs:attributeGroup ref="idmef:global"/>
+     </xs:extension>
+   </xs:simpleContent>
+   </xs:complexType>
+
+
+4.4. IDMEF BYTES
+
+
+   BYTES can be defined by built-in data type hexBinary.
+
+
+
+
+
+Expires: August 9, 2004                                         [Page 4]
+
+Internet Draft                                          February 9, 2004
+
+
+4.5. IDMEF Enumeration
+
+
+   Enumeration can be defined with enumeration facet with occurrence
+   constraints of XML Schema
+
+   Only one
+      minOccurs=1 maxOccurs=1
+   Zero or one
+      minOccurs=0 maxOccurs=1
+   Zero or more
+      minOccurs=0 maxOccurs=unbounded
+   One or more
+      minOccurs=1 maxOccurs=unbounded
+
+
+4.6. IDMEF DATETIME
+
+
+   Date-time strings are represented by the DATETIME data type. Each
+   date-time string identifies a particular instant in time; ranges are
+   not supported.
+
+   It can be defined as union of built-in data types, date, time, and
+   dateTime of XML Schema
+
+   <xs:simpleType name="DATETIME_ELEMENT">
+     <xs:union memberTypes="xs:date xs:time xs:dateTime"/>
+   </xs:simpleType>
+
+
+4.7. IDMEF NTPTIMESTAMP
+
+
+   Within IDMEF messages, NTP timestamps MUST be encoded as two 32-bit
+   hexadecimal values, separated by a period ('.') For example,
+   "0x12345678.0x87654321".
+
+   This can be defined as built-in string type with constraint by
+   regular expression. This DATETIME definition include an attribute
+   ntptimestamp.
+
+   <!-- IDMEF DATETIME definition -->
+
+   <xs:complexType name="DATETIME">
+     <xs:simpleContent>
+       <xs:extension base="idmef:DATETIME_ELEMENT">
+           <xs:attribute name="ntpstamp" use="required">
+
+
+
+Expires: August 9, 2004                                         [Page 5]
+
+Internet Draft                                          February 9, 2004
+
+
+             <xs:simpleType>
+               <xs:restriction base="xs:string">
+                   <xs:pattern value="0x[0-9a-fA-F]+.0x[0-9a-fA-F]+"/>
+               </xs:restriction>
+             </xs:simpleType>
+         </xs:attribute>
+       </xs:extension>
+     </xs:simpleContent>
+
+   </xs:complexType>
+
+
+4.8. IDMEF PORTLIST
+
+
+   Port lists are represented by the PORTLIST data type, and consist of
+   a comma-separated list of numbers (individual integers) and ranges
+   (N-M means ports N through M, inclusive). Any combination of numbers
+   and ranges may be used in a single list. For example, "5-
+   25,37,42,43,53,69-119,123-514".
+
+   It can be defined by union and constraint with regular expression of
+   XML Schema.
+
+
+   <!-- IDMEF PORTS definition -->
+
+   <xs:simpleType name="PORTLIST">
+
+     <xs:list>
+
+       <xs:simpleType>
+
+         <xs:union memberTypes="xs:int">
+           <xs:simpleType>
+             <xs:restriction base="xs:string">
+               <xs:pattern value="\d+-\d+"/>
+             </xs:restriction>
+           </xs:simpleType>
+         </xs:union>
+
+       </xs:simpleType>
+
+     </xs:list>
+
+   </xs:simpleType>
+
+
+
+
+
+Expires: August 9, 2004                                         [Page 6]
+
+Internet Draft                                          February 9, 2004
+
+
+5. Definition
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema
+        targetNamespace="urn:iana:xml:ns:idmef"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:idmef="urn:iana:xml:ns:idmef">
+
+<xs:import
+        namespace="http://www.w3.org/XML/1998/namespace"
+        schemaLocation="http://www.w3g.org/XML/2001/xml.xsd"/>
+
+<!-- =============================================================== -->
+
+<!-- Global attribute -->
+
+<xs:attributeGroup name="global">
+        <xs:attribute ref="xml:space"/>
+        <xs:attribute ref="xml:lang"/>
+</xs:attributeGroup>
+
+<!-- =============================================================== -->
+
+<xs:element name="IDMEF-Message">
+
+  <xs:complexType>
+
+    <!-- Zero or more -->
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element ref="idmef:Alert"/>
+      <xs:element ref="idmef:Heartbeat"/>
+    </xs:choice>
+
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xs:attributeGroup ref="idmef:global"/>
+    <xs:attribute name="version" type="xs:string" fixed="1.0"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+<!-- ==========================  CORE  ============================= -->
+<!-- =============================================================== -->
+
+
+
+Expires: August 9, 2004                                         [Page 7]
+
+Internet Draft                                          February 9, 2004
+
+
+<!-- =============================================================== -->
+
+<xs:element name="Alert">
+
+  <xs:complexType>
+
+  <xs:sequence>
+    <!-- Exactly one -->
+    <xs:element ref="idmef:Analyzer"/>
+    <xs:element ref="idmef:CreateTime"/>
+    <!-- Zero or one -->
+    <xs:element minOccurs="0" ref="idmef:DetectTime"/>
+    <xs:element minOccurs="0" ref="idmef:AnalyzerTime"/>
+    <!-- Zero or more -->
+    <xs:element minOccurs="0" maxOccurs="unbounded" ref="idmef:Source"/>
+    <xs:element minOccurs="0" maxOccurs="unbounded" ref="idmef:Target"/>
+    <!-- One or more -->
+    <xs:element maxOccurs="unbounded" ref="idmef:Classification"/>
+    <!-- Zero or one -->
+    <xs:element minOccurs="0" ref="idmef:Assessment"/>
+
+    <xs:choice minOccurs="0">
+      <xs:element ref="idmef:ToolAlert"/>
+      <xs:element ref="idmef:OverflowAlert"/>
+      <xs:element ref="idmef:CorrelationAlert"/>
+    </xs:choice>
+
+    <!-- Zero or more -->
+    <xs:element minOccurs="0" maxOccurs="unbounded" ref="idmef:AdditionalData"/>
+
+  </xs:sequence>
+
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+  <xs:attribute name="ident" type="xs:string" default="0"/>
+  <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="Heartbeat">
+
+  <xs:complexType>
+
+  <xs:sequence>
+
+
+
+Expires: August 9, 2004                                         [Page 8]
+
+Internet Draft                                          February 9, 2004
+
+
+    <!-- Exactly one -->
+    <xs:element ref="idmef:Analyzer"/>
+    <xs:element ref="idmef:CreateTime"/>
+    <!-- Zero or one -->
+    <xs:element minOccurs="0" ref="idmef:AnalyzerTime"/>
+    <!-- Zero or more -->
+    <xs:element minOccurs="0" maxOccurs="unbounded" ref="idmef:AdditionalData"/>
+  </xs:sequence>
+
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+  <xs:attribute name="ident" type="xs:string" default="0"/>
+  <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="AdditionalData">
+
+  <xs:complexType>
+
+    <xs:complexContent>
+
+      <xs:restriction base="xs:anyType">
+
+      <xs:attribute name="type" default="string">
+
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+
+            <xs:enumeration value="boolean"/>
+            <xs:enumeration value="byte"/>
+            <xs:enumeration value="character"/>
+            <xs:enumeration value="date-time"/>
+            <xs:enumeration value="integer"/>
+            <xs:enumeration value="ntpstamp"/>
+            <xs:enumeration value="portlist"/>
+            <xs:enumeration value="real"/>
+            <xs:enumeration value="string"/>
+            <xs:enumeration value="xml"/>
+
+          </xs:restriction>
+        </xs:simpleType>
+
+      </xs:attribute>
+
+
+
+Expires: August 9, 2004                                         [Page 9]
+
+Internet Draft                                          February 9, 2004
+
+
+      <xs:attribute name="meaning" type="xs:string"/>
+
+      <xs:attributeGroup ref="idmef:global"/>
+
+      </xs:restriction>
+
+    </xs:complexContent>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="Analyzer">
+
+  <xs:complexType>
+  <xs:sequence>
+    <!-- Zero or one -->
+    <xs:element minOccurs="0" ref="idmef:Node"/>
+    <xs:element minOccurs="0" ref="idmef:Process"/>
+  </xs:sequence>
+
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+  <xs:attribute name="analyzerid" type="xs:string" default="0"/>
+
+  <xs:attribute name="manufacturer" type="xs:string"/>
+  <xs:attribute name="model" type="xs:string"/>
+  <xs:attribute name="version" type="xs:string"/>
+  <xs:attribute name="class" type="xs:string"/>
+  <xs:attribute name="ostype" type="xs:string"/>
+  <xs:attribute name="osversion" type="xs:string"/>
+
+  <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="Source">
+
+  <xs:complexType>
+
+    <xs:sequence>
+      <!-- Zero or one -->
+
+
+
+Expires: August 9, 2004                                        [Page 10]
+
+Internet Draft                                          February 9, 2004
+
+
+      <xs:element minOccurs="0" ref="idmef:Node"/>
+      <xs:element minOccurs="0" ref="idmef:User"/>
+      <xs:element minOccurs="0" ref="idmef:Process"/>
+      <xs:element minOccurs="0" ref="idmef:Service"/>
+    </xs:sequence>
+
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xs:attribute name="ident" type="xs:string" default="0"/>
+
+    <xs:attribute name="spoofed" default="unknown">
+      <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="unknown"/>
+        <xs:enumeration value="yes"/>
+        <xs:enumeration value="no"/>
+      </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+
+  <xs:attribute name="interface" type="xs:string"/>
+
+  <xs:attributeGroup ref="idmef:global"/>
+
+</xs:complexType>
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="Target">
+
+  <xs:complexType>
+
+    <xs:sequence>
+      <!-- Zero or one -->
+      <xs:element minOccurs="0" ref="idmef:Node"/>
+      <xs:element minOccurs="0" ref="idmef:User"/>
+      <xs:element minOccurs="0" ref="idmef:Process"/>
+      <xs:element minOccurs="0" ref="idmef:Service"/>
+      <xs:element minOccurs="0" ref="idmef:FileList"/>
+    </xs:sequence>
+
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xs:attribute name="ident" type="xs:string" default="0"/>
+
+    <xs:attribute name="decoy" default="unknown">
+      <xs:simpleType>
+
+
+
+Expires: August 9, 2004                                        [Page 11]
+
+Internet Draft                                          February 9, 2004
+
+
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="unknown"/>
+        <xs:enumeration value="yes"/>
+        <xs:enumeration value="no"/>
+      </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="interface" type="xs:string"/>
+
+    <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="Classification">
+
+  <xs:complexType>
+
+    <xs:sequence>
+      <xs:element ref="idmef:name"/>
+      <xs:element ref="idmef:url"/>
+    </xs:sequence>
+
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <xs:attribute name="origin" default="unknown">
+      <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="unknown"/>
+        <xs:enumeration value="bugtraqid"/>
+        <xs:enumeration value="cve"/>
+        <xs:enumeration value="vendor-specific"/>
+      </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+<!-- ======================= CORE options ========================== -->
+
+
+
+Expires: August 9, 2004                                        [Page 12]
+
+Internet Draft                                          February 9, 2004
+
+
+<!-- =============================================================== -->
+
+<!-- =============================================================== -->
+
+<xs:element name="CorrelationAlert">
+
+  <xs:complexType>
+
+  <xs:sequence>
+    <!-- Exactly one -->
+    <xs:element ref="idmef:name"/>
+    <!-- one or more -->
+    <xs:element maxOccurs="unbounded" ref="idmef:alertident"/>
+  </xs:sequence>
+
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+  <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="OverflowAlert">
+
+  <xs:complexType>
+
+  <xs:sequence>
+    <!-- Exactly one -->
+    <xs:element ref="idmef:program"/>
+    <!-- Zero or one -->
+    <xs:element minOccurs="0" ref="idmef:size"/>
+    <xs:element minOccurs="0" ref="idmef:buffer"/>
+  </xs:sequence>
+
+  <xs:attributeGroup ref="idmef:global"/>
+
+</xs:complexType>
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="ToolAlert">
+
+  <xs:complexType>
+
+
+
+
+Expires: August 9, 2004                                        [Page 13]
+
+Internet Draft                                          February 9, 2004
+
+
+  <xs:sequence>
+    <!-- Exactly one -->
+    <xs:element ref="idmef:name"/>
+    <!-- Zero or one -->
+    <xs:element minOccurs="0" ref="idmef:command"/>
+    <!-- One or more -->
+    <xs:element maxOccurs="unbounded" ref="idmef:alertident"/>
+    </xs:sequence>
+
+  <xs:attributeGroup ref="idmef:global"/>
+
+</xs:complexType>
+</xs:element>
+
+<!-- =============================================================== -->
+<!-- =============================================================== -->
+<!-- =============================================================== -->
+
+<!-- =============================================================== -->
+
+<xs:element name="Assessment">
+
+  <xs:complexType>
+
+  <xs:sequence>
+    <xs:element minOccurs="0" ref="idmef:Impact"/>
+    <xs:element minOccurs="0" maxOccurs="unbounded" ref="idmef:Action"/>
+    <xs:element minOccurs="0" ref="idmef:Confidence"/>
+  </xs:sequence>
+
+  <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="File">
+
+  <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="idmef:name"/>
+    <xs:element ref="idmef:path"/>
+    <xs:element minOccurs="0" ref="idmef:create-time"/>
+    <xs:element minOccurs="0" ref="idmef:modify-time"/>
+    <xs:element minOccurs="0" ref="idmef:access-time"/>
+
+
+
+Expires: August 9, 2004                                        [Page 14]
+
+Internet Draft                                          February 9, 2004
+
+
+    <xs:element minOccurs="0" ref="idmef:data-size"/>
+    <xs:element minOccurs="0" ref="idmef:disk-size"/>
+    <xs:element minOccurs="0" maxOccurs="unbounded" ref="idmef:FileAccess"/>
+    <xs:element minOccurs="0" maxOccurs="unbounded" ref="idmef:Linkage"/>
+    <xs:element minOccurs="0" ref="idmef:Inode"/>
+  </xs:sequence>
+
+  <xs:attribute name="ident" type="xs:string" default="0"/>
+
+  <xs:attribute name="category" use="required">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="current"/>
+        <xs:enumeration value="original"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+
+  <xs:attribute name="fstype" type="xs:string" use="required"/>
+  <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="FileAccess">
+
+  <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="idmef:UserId"/>
+    <xs:element maxOccurs="unbounded" ref="idmef:permission"/>
+  </xs:sequence>
+
+  <xs:attributeGroup ref="idmef:global"/>
+
+ </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="FileList">
+
+  <xs:complexType>
+
+
+
+
+Expires: August 9, 2004                                        [Page 15]
+
+Internet Draft                                          February 9, 2004
+
+
+  <xs:sequence>
+    <xs:element maxOccurs="unbounded" ref="idmef:File"/>
+  </xs:sequence>
+
+  <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="Inode">
+
+  <xs:complexType>
+
+  <xs:sequence>
+
+    <xs:element minOccurs="0" ref="idmef:change-time"/>
+
+    <xs:sequence minOccurs="0">
+      <xs:element ref="idmef:number"/>
+      <xs:element ref="idmef:major-device"/>
+      <xs:element ref="idmef:minor-device"/>
+    </xs:sequence>
+
+    <xs:sequence minOccurs="0">
+      <xs:element ref="idmef:c-major-device"/>
+      <xs:element ref="idmef:c-minor-device"/>
+    </xs:sequence>
+
+  </xs:sequence>
+
+  <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="Linkage">
+
+  <xs:complexType>
+
+  <xs:choice>
+
+    <xs:sequence>
+
+
+
+Expires: August 9, 2004                                        [Page 16]
+
+Internet Draft                                          February 9, 2004
+
+
+      <xs:element ref="idmef:name"/>
+      <xs:element ref="idmef:path"/>
+    </xs:sequence>
+
+    <xs:element ref="idmef:File"/>
+
+  </xs:choice>
+
+  <xs:attribute name="category" use="required">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="hard-link"/>
+        <xs:enumeration value="mount-point"/>
+        <xs:enumeration value="reparse-point"/>
+        <xs:enumeration value="shortcut"/>
+        <xs:enumeration value="stream"/>
+        <xs:enumeration value="symbolic-link"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+
+  <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="Node">
+
+  <xs:complexType>
+
+  <xs:sequence>
+
+    <xs:element minOccurs="0" ref="idmef:location"/>
+
+    <xs:choice>
+      <xs:element ref="idmef:name"/>
+      <xs:element ref="idmef:Address"/>
+    </xs:choice>
+
+    <xs:element minOccurs="0" maxOccurs="unbounded" ref="idmef:Address"/>
+
+  </xs:sequence>
+
+  <xs:attribute name="ident" type="xs:string" default="0"/>
+  <xs:attribute name="category" default="unknown">
+
+
+
+Expires: August 9, 2004                                        [Page 17]
+
+Internet Draft                                          February 9, 2004
+
+
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="unknown"/>
+        <xs:enumeration value="ads"/>
+        <xs:enumeration value="afs"/>
+        <xs:enumeration value="coda"/>
+        <xs:enumeration value="dfs"/>
+        <xs:enumeration value="dns"/>
+        <xs:enumeration value="hosts"/>
+        <xs:enumeration value="kerberos"/>
+        <xs:enumeration value="nds"/>
+        <xs:enumeration value="nis"/>
+        <xs:enumeration value="nisplus"/>
+        <xs:enumeration value="nt"/>
+        <xs:enumeration value="wfw"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+
+  <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="Process">
+
+  <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="idmef:name"/>
+    <xs:element minOccurs="0" ref="idmef:pid"/>
+    <xs:element minOccurs="0" ref="idmef:path"/>
+    <xs:element minOccurs="0" maxOccurs="unbounded" ref="idmef:arg"/>
+    <xs:element minOccurs="0" maxOccurs="unbounded" ref="idmef:env"/>
+  </xs:sequence>
+
+  <xs:attribute name="ident" type="xs:string" default="0"/>
+  <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+
+
+
+Expires: August 9, 2004                                        [Page 18]
+
+Internet Draft                                          February 9, 2004
+
+
+<xs:element name="Service">
+
+  <xs:complexType>
+
+  <xs:sequence>
+
+    <xs:choice>
+
+      <xs:choice>
+        <xs:sequence>
+          <xs:element ref="idmef:name"/>
+          <xs:element minOccurs="0" ref="idmef:port"/>
+        </xs:sequence>
+        <xs:sequence>
+          <xs:element ref="idmef:port"/>
+          <xs:element minOccurs="0" ref="idmef:name"/>
+        </xs:sequence>
+      </xs:choice>
+
+      <xs:element ref="idmef:portlist"/>
+
+    </xs:choice>
+
+    <xs:element minOccurs="0" ref="idmef:protocol"/>
+    <xs:element minOccurs="0" ref="idmef:SNMPService"/>
+    <xs:element minOccurs="0" ref="idmef:WebService"/>
+
+  </xs:sequence>
+
+  <xs:attribute name="ident" type="xs:string" default="0"/>
+  <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="SNMPService">
+
+  <xs:complexType>
+
+  <xs:sequence>
+
+    <xs:element minOccurs="0" ref="idmef:oid"/>
+
+    <xs:choice minOccurs="0">
+      <xs:element ref="idmef:community"/>
+
+
+
+Expires: August 9, 2004                                        [Page 19]
+
+Internet Draft                                          February 9, 2004
+
+
+      <xs:sequence>
+        <xs:element ref="idmef:securityName"/>
+        <xs:element ref="idmef:contextName"/>
+        <xs:element ref="idmef:contextEngineID"/>
+      </xs:sequence>
+    </xs:choice>
+
+    <xs:element minOccurs="0" ref="idmef:command"/>
+
+  </xs:sequence>
+
+  <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="User">
+
+  <xs:complexType>
+
+  <xs:sequence>
+    <xs:element maxOccurs="unbounded" ref="idmef:UserId"/>
+  </xs:sequence>
+
+  <xs:attribute name="ident" type="xs:string" default="0"/>
+
+  <xs:attribute name="category" default="unknown">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="unknown"/>
+        <xs:enumeration value="application"/>
+        <xs:enumeration value="os-device"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+
+  <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="UserId">
+
+
+
+Expires: August 9, 2004                                        [Page 20]
+
+Internet Draft                                          February 9, 2004
+
+
+  <xs:complexType>
+
+  <xs:choice>
+
+    <xs:sequence>
+      <xs:element ref="idmef:name"/>
+      <xs:element minOccurs="0" ref="idmef:number"/>
+    </xs:sequence>
+
+    <xs:sequence>
+      <xs:element ref="idmef:number"/>
+      <xs:element minOccurs="0" ref="idmef:name"/>
+    </xs:sequence>
+
+  </xs:choice>
+
+  <xs:attribute name="ident" type="xs:string" default="0"/>
+  <xs:attribute name="type" default="original-user">
+
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="current-user"/>
+      <xs:enumeration value="original-user"/>
+      <xs:enumeration value="target-user"/>
+      <xs:enumeration value="user-privs"/>
+      <xs:enumeration value="current-group"/>
+      <xs:enumeration value="group-privs"/>
+      <xs:enumeration value="other-privs"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:attribute>
+
+    <xs:attributeGroup ref="idmef:global"/>
+
+</xs:complexType>
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="WebService">
+
+  <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="idmef:url"/>
+    <xs:element minOccurs="0" ref="idmef:cgi"/>
+    <xs:element minOccurs="0" ref="idmef:http-method"/>
+
+
+
+Expires: August 9, 2004                                        [Page 21]
+
+Internet Draft                                          February 9, 2004
+
+
+    <xs:element minOccurs="0" maxOccurs="unbounded" ref="idmef:arg"/>
+  </xs:sequence>
+
+  <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="Action">
+
+  <xs:complexType>
+
+  <xs:simpleContent>
+    <xs:extension base="xs:string">
+
+    <xs:attribute name="category" default="other">
+      <xs:simpleType>
+          <xs:restriction base="xs:string">
+          <xs:enumeration value="block-installed"/>
+          <xs:enumeration value="notification-sent"/>
+          <xs:enumeration value="taken-offline"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attributeGroup ref="idmef:global"/>
+
+    </xs:extension>
+  </xs:simpleContent>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="Confidence">
+
+  <xs:complexType>
+
+  <xs:simpleContent>
+    <xs:extension base="xs:string">
+
+    <xs:attribute name="rating" default="numeric">
+
+
+
+Expires: August 9, 2004                                        [Page 22]
+
+Internet Draft                                          February 9, 2004
+
+
+      <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="low"/>
+        <xs:enumeration value="medium"/>
+        <xs:enumeration value="high"/>
+        <xs:enumeration value="numeric"/>
+      </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attributeGroup ref="idmef:global"/>
+
+    </xs:extension>
+  </xs:simpleContent>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="Impact">
+
+  <xs:complexType>
+
+  <xs:simpleContent>
+    <xs:extension base="xs:string">
+    <xs:attribute name="severity">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="low"/>
+          <xs:enumeration value="medium"/>
+          <xs:enumeration value="high"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="completion">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="failed"/>
+          <xs:enumeration value="succeeded"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="type" default="other">
+      <xs:simpleType>
+
+
+
+Expires: August 9, 2004                                        [Page 23]
+
+Internet Draft                                          February 9, 2004
+
+
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="admin"/>
+          <xs:enumeration value="dos"/>
+          <xs:enumeration value="file"/>
+          <xs:enumeration value="recon"/>
+          <xs:enumeration value="user"/>
+          <xs:enumeration value="other"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attributeGroup ref="idmef:global"/>
+
+    </xs:extension>
+  </xs:simpleContent>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="alertident">
+
+  <xs:complexType>
+  <xs:simpleContent>
+
+  <xs:extension base="xs:string">
+    <xs:attribute name="analyzerid" type="xs:string" default="0"/>
+    <xs:attributeGroup ref="idmef:global"/>
+  </xs:extension>
+
+  </xs:simpleContent>
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="CreateTime" type="idmef:DATETIME"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="DetectTime" type="idmef:DATETIME"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="AnalyzerTime" type="idmef:DATETIME"/>
+
+
+
+Expires: August 9, 2004                                        [Page 24]
+
+Internet Draft                                          February 9, 2004
+
+
+<!-- =============================================================== -->
+
+<xs:element name="arg" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="buffer" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="cgi" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="command" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="oid" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="community" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="securityName" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="contextName" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="contextEngineID" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="data-size" type="idmef:INTEGER"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="disk-size" type="idmef:INTEGER"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="env" type="idmef:STRINGS"/>
+
+
+
+
+Expires: August 9, 2004                                        [Page 25]
+
+Internet Draft                                          February 9, 2004
+
+
+<!-- =============================================================== -->
+
+<xs:element name="http-method" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="location" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="major-device" type="idmef:INTEGER"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="minor-device" type="idmef:INTEGER"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="c-major-device" type="idmef:INTEGER"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="c-minor-device" type="idmef:INTEGER"/>
+
+<!-- =============================================================== -->
+<!-- =============================================================== -->
+
+<xs:element name="access-time" type="idmef:DATETIME"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="create-time" type="idmef:DATETIME"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="change-time" type="idmef:DATETIME"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="modify-time" type="idmef:DATETIME"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="name" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="number" type="idmef:INTEGER"/>
+
+
+
+Expires: August 9, 2004                                        [Page 26]
+
+Internet Draft                                          February 9, 2004
+
+
+<!-- =============================================================== -->
+
+<xs:element name="path" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="permission" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="pid" type="idmef:INTEGER"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="port" type="idmef:INTEGER"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="portlist" type="idmef:PORTLIST"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="program" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="protocol" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="size" type="idmef:INTEGER"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="url" type="xs:anyURI"/>
+
+<!-- =============================================================== -->
+<!-- =============================================================== -->
+
+<!-- =============================================================== -->
+
+<xs:element name="Address">
+
+  <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="idmef:address"/>
+    <xs:element minOccurs="0" ref="idmef:netmask"/>
+
+
+
+Expires: August 9, 2004                                        [Page 27]
+
+Internet Draft                                          February 9, 2004
+
+
+  </xs:sequence>
+
+  <xs:attribute name="ident" type="xs:string" default="0"/>
+
+  <xs:attribute name="category" default="unknown">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="unknown"/>
+        <xs:enumeration value="atm"/>
+        <xs:enumeration value="e-mail"/>
+        <xs:enumeration value="lotus-notes"/>
+        <xs:enumeration value="mac"/>
+        <xs:enumeration value="sna"/>
+        <xs:enumeration value="vm"/>
+        <xs:enumeration value="ipv4-addr"/>
+        <xs:enumeration value="ipv4-addr-hex"/>
+        <xs:enumeration value="ipv4-net"/>
+        <xs:enumeration value="ipv4-net-mask"/>
+        <xs:enumeration value="ipv6-addr"/>
+        <xs:enumeration value="ipv6-addr-hex"/>
+        <xs:enumeration value="ipv6-net"/>
+        <xs:enumeration value="ipv6-net-mask"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+
+  <xs:attribute name="vlan-name" type="xs:string"/>
+  <xs:attribute name="vlan-num" type="xs:string"/>
+
+  <xs:attributeGroup ref="idmef:global"/>
+
+  </xs:complexType>
+
+</xs:element>
+
+<!-- =============================================================== -->
+
+<xs:element name="address" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+
+<xs:element name="netmask" type="idmef:STRINGS"/>
+
+<!-- =============================================================== -->
+<!-- =============================================================== -->
+<!-- =============================================================== -->
+
+<!-- IDMEF STRINGS definition -->
+
+
+
+Expires: August 9, 2004                                        [Page 28]
+
+Internet Draft                                          February 9, 2004
+
+
+<xs:complexType name="STRINGS">
+
+<xs:simpleContent>
+
+  <xs:extension base="xs:string">
+    <xs:attributeGroup ref="idmef:global"/>
+  </xs:extension>
+
+</xs:simpleContent>
+
+</xs:complexType>
+
+<!-- =============================================================== -->
+
+<!-- IDMEF INTEGER definition -->
+
+<xs:simpleType name="INTEGER">
+  <xs:union memberTypes="xs:int xs:hexBinary"/>
+</xs:simpleType>
+
+<!-- =============================================================== -->
+
+<!-- IDMEF DATETIME definition -->
+
+<xs:complexType name="DATETIME">
+  <xs:simpleContent>
+    <xs:extension base="idmef:DATETIME_ELEMENT">
+        <xs:attribute name="ntpstamp" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="0x[0-9a-fA-F]+.0x[0-9a-fA-F]+"/>
+            </xs:restriction>
+          </xs:simpleType>
+      </xs:attribute>
+    </xs:extension>
+  </xs:simpleContent>
+
+</xs:complexType>
+
+<xs:simpleType name="DATETIME_ELEMENT">
+  <xs:union memberTypes="xs:date xs:time xs:dateTime"/>
+</xs:simpleType>
+
+<!-- =============================================================== -->
+
+<!-- IDMEF PORTS definition -->
+
+<xs:simpleType name="PORTLIST">
+
+
+
+Expires: August 9, 2004                                        [Page 29]
+
+Internet Draft                                          February 9, 2004
+
+
+  <xs:list>
+
+    <xs:simpleType>
+
+      <xs:union memberTypes="xs:int">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="\d+-\d+"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+
+    </xs:simpleType>
+
+  </xs:list>
+
+</xs:simpleType>
+
+<!-- =============================================================== -->
+
+</xs:schema>
+
+
+
+6.  Issues
+
+
+   Requirements of more detailed or strict definition of message
+   described as NOTE, like below.
+
+      Note that <number>, <major-device>, and <minor-device> must be
+      given together, and the <c-major-device> and <c-minor-device> must
+      be given together.
+
+   Some common data type definition. It is possible those are defined as
+   common element in another common namespace. Potential elements are
+   like below,
+      IP address,
+      Netmask,
+      Port number,
+      Timestamp,
+   and so on.
+
+
+
+
+
+
+
+
+
+Expires: August 9, 2004                                        [Page 30]
+
+Internet Draft                                          February 9, 2004
+
+
+7.  Intellectual Property
+
+      The IETF takes no position regarding the validity or scope of any
+      intellectual property or other rights that might be claimed to
+      pertain to the implementation or use of the technology described in
+      this document or the extent to which any license under such rights
+      might or might not be available; neither does it represent that it
+      has made any effort to identify any such rights.  Information on the
+      IETF's procedures with respect to rights in standards-track and
+      standards-related documentation can be found in BCP-11.  Copies of
+      claims of rights made available for publication and any assurances of
+      licenses to be made available, or the result of an attempt made to
+      obtain a general license or permission for the use of such
+      proprietary rights by implementors or users of this specification can
+      be obtained from the IETF Secretariat.
+
+      The IETF invites any interested party to bring to its attention any
+      copyrights, patents or patent applications, or other proprietary
+      rights which may cover technology that may be required to practice
+      this standard.  Please address the information to the IETF Executive
+      Director.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Expires: August 9, 2004                                        [Page 31]
+
+Internet Draft                                          February 9, 2004
+
+
+References
+
+   [Normative References]
+
+   1  Bradner, S., "The Internet Standards Process -- Revision 3", BCP 9,
+      RFC 2026, October 1996.
+
+   2  Bradner, S., "Key words for use in RFCs to Indicate Requirement
+      Levels", BCP 14, RFC 2119, March 1997
+
+   3 D.Curry, H.Debar, B. Fleinstein, "The Intrusion Detection Message
+      Exchange Format", Work in progress, draft-ietf-idwg-idmef-xml-
+      11.txt
+
+   4 M. Mealling, "The IETF XML Registry", Work in progress, draft-
+      mealling-iana-xmlns-registry-05.txt
+
+Security Considerations
+
+   This Internet-Draft describes a data representation for exchanging
+   security-related information between intrusion detection system
+   implementations. Although there are no security concerns directly
+   applicable to the format of this data, the data itself may contain
+   security-sensitive information whose confidentiality, integrity, and/
+   or availability may need to be protected.
+   This suggests that the systems used to collect, transmit, process,
+   and store this data should be protected against unauthorized use, and
+   that the data itself should be protected against unauthorized access.
+   The means for achieving this protection are outside the scope of this
+   document.
+
+Authors' Addresses
+
+      Kohei OHTA
+      Cyber Solutions Inc.
+      6-6-3 Minami Yoshinari
+      Aoba-ku, Sendai 989-3204
+      Japan
+
+      Phone: +81-22-303-4012
+      EMail: kohei@cysols.com
+
+Full Copyright statement
+
+         "Copyright (C) The Internet Society (2004). All Rights
+         Reserved.
+
+         This document and translations of it may be copied and
+
+
+
+Expires: August 9, 2004                                        [Page 32]
+
+Internet Draft                                          February 9, 2004
+
+
+         furnished to others, and derivative works that comment on or
+         otherwise explain it or assist in its implmentation may be
+         prepared, copied, published and distributed, in whole or in
+         part, without restriction of any kind, provided that the above
+         copyright notice and this paragraph are included on all such
+         copies and derivative works.  However, this document itself may
+         not be modified in any way, such as by removing the copyright
+         notice or references to the Internet Society or other Internet
+         organizations, except as needed for the  purpose of developing
+         Internet standards in which case the procedures for copyrights
+         defined in the Internet Standards process must be followed, or
+         as required to translate it into languages other than English.
+
+         The limited permissions granted above are perpetual and will
+         not be revoked by the Internet Society or its successors or
+         assigns.
+
+         This document and the information contained herein is provided
+         on an "AS IS" basis and THE INTERNET SOCIETY AND THE INTERNET
+         ENGINEERING TASK FORCE DISCLAIMS ALL WARRANTIES, EXPRESS OR
+         IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE
+         OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY
+         IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+         PARTICULAR PURPOSE."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Expires: August 9, 2004                                        [Page 33]

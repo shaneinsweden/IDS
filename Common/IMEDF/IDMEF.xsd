@@ -1,0 +1,664 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:idmef="http://iana.org/idmef"
+						targetNamespace="http://iana.org/idmef" elementFormDefault="qualified"
+>
+	<xsd:annotation>
+		<xsd:documentation>
+			Intrusion Detection Message Exchange Format (IDMEF) Version 1.0
+		</xsd:documentation>
+	</xsd:annotation>
+
+	<!-- Section 1 -->
+	<!-- Omitted. This section did namespace magic and is not needed with XSD validation. -->
+
+	<!-- Section 2 -->
+	<!--
+	| Values for the Action.category attribute.
+	-->
+	<xsd:simpleType name="action-category">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="block-installed"/>
+			<xsd:enumeration value="notification-sent"/>
+			<xsd:enumeration value="taken-offline"/>
+			<xsd:enumeration value="other"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!--
+	| Values for the Address.category attribute.
+	-->
+	<xsd:simpleType name="address-category">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="unknown"/>
+			<xsd:enumeration value="atm"/>
+			<xsd:enumeration value="e-mail"/>
+			<xsd:enumeration value="lotus-notes"/>
+			<xsd:enumeration value="mac"/>
+			<xsd:enumeration value="sna"/>
+			<xsd:enumeration value="vm"/>
+			<xsd:enumeration value="ipv4-addr"/>
+			<xsd:enumeration value="ipv4-addr-hex"/>
+			<xsd:enumeration value="ipv4-net"/>
+			<xsd:enumeration value="ipv4-net-mask"/>
+			<xsd:enumeration value="ipv6-addr"/>
+			<xsd:enumeration value="ipv6-addr-hex"/>
+			<xsd:enumeration value="ipv6-net"/>
+			<xsd:enumeration value="ipv6-net-mask"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!--
+	| Values for the Impact.severity attribute.
+	-->
+	<xsd:simpleType name="impact-severity">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="info"/>
+			<xsd:enumeration value="low"/>
+			<xsd:enumeration value="medium"/>
+			<xsd:enumeration value="high"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!--
+	| Values for the Impact.completion attribute.
+	-->
+	<xsd:simpleType name="impact-completion">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="failed"/>
+			<xsd:enumeration value="succeeded"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!--
+	| Values for the Impact.type attribute.
+	-->
+	<xsd:simpleType name="impact-type">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="admin"/>
+			<xsd:enumeration value="dos"/>
+			<xsd:enumeration value="file"/>
+			<xsd:enumeration value="recon"/>
+			<xsd:enumeration value="user"/>
+			<xsd:enumeration value="other"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!--
+	| Values for the File.category attribute.
+	-->
+	<xsd:simpleType name="file-category">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="current"/>
+			<xsd:enumeration value="original"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!--
+	| Values for the FileAccess.Permissions attribute
+	-->
+	<xsd:simpleType name="file-permission">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="noAccess"/>
+			<xsd:enumeration value="read"/>
+			<xsd:enumeration value="write"/>
+			<xsd:enumeration value="execute"/>
+			<xsd:enumeration value="search"/>
+			<xsd:enumeration value="delete"/>
+			<xsd:enumeration value="executeAs"/>
+			<xsd:enumeration value="changePermissions"/>
+			<xsd:enumeration value="takeOwnership"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!--
+	| Values for the Id.type attribute.
+	-->
+	<xsd:simpleType name="id-type">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="current-user"/>
+			<xsd:enumeration value="original-user"/>
+			<xsd:enumeration value="target-user"/>
+			<xsd:enumeration value="user-privs"/>
+			<xsd:enumeration value="current-group"/>
+			<xsd:enumeration value="group-privs"/>
+			<xsd:enumeration value="other-privs"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!--
+	| Values for the Linkage.category attribute.
+	-->
+	<xsd:simpleType name="linkage-category">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="hard-link"/>
+			<xsd:enumeration value="mount-point"/>
+			<xsd:enumeration value="reparse-point"/>
+			<xsd:enumeration value="shortcut"/>
+			<xsd:enumeration value="stream"/>
+			<xsd:enumeration value="symbolic-link"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!--
+	| Values for the Checksum.algorithm attribute
+	-->
+	<xsd:simpleType name="checksum-algorithm">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="MD4"/>
+			<xsd:enumeration value="MD5"/>
+			<xsd:enumeration value="SHA1"/>
+			<xsd:enumeration value="SHA2-256"/>
+			<xsd:enumeration value="SHA2-384"/>
+			<xsd:enumeration value="SHA2-512"/>
+			<xsd:enumeration value="CRC-32"/>
+			<xsd:enumeration value="Haval"/>
+			<xsd:enumeration value="Tiger"/>
+			<xsd:enumeration value="Gost"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!--
+	| Values for the Node.category attribute.
+	-->
+	<xsd:simpleType name="node-category">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="unknown"/>
+			<xsd:enumeration value="ads"/>
+			<xsd:enumeration value="afs"/>
+			<xsd:enumeration value="coda"/>
+			<xsd:enumeration value="dfs"/>
+			<xsd:enumeration value="dns"/>
+			<xsd:enumeration value="hosts"/>
+			<xsd:enumeration value="kerberos"/>
+			<xsd:enumeration value="nds"/>
+			<xsd:enumeration value="nis"/>
+			<xsd:enumeration value="nisplus"/>
+			<xsd:enumeration value="nt"/>
+			<xsd:enumeration value="wfw"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!--
+	| Values for the reference.origin attribute.
+	-->
+	<xsd:simpleType name="reference-origin">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="unknown"/>
+			<xsd:enumeration value="vendor-specific"/>
+			<xsd:enumeration value="user-specific"/>
+			<xsd:enumeration value="bugtraqid"/>
+			<xsd:enumeration value="cve"/>
+			<xsd:enumeration value="osvdb"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!--
+	| Values for the Confidence.rating attribute.
+	-->
+	<xsd:simpleType name="confidence-rating">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="low"/>
+			<xsd:enumeration value="medium"/>
+			<xsd:enumeration value="high"/>
+			<xsd:enumeration value="numeric"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!--
+	| Values for the User.category attribute.
+	-->
+	<xsd:simpleType name="user-category">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="unknown"/>
+			<xsd:enumeration value="application"/>
+			<xsd:enumeration value="os-device"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!--
+	| Values for the additionaldata.type attribute.
+	-->
+	<xsd:simpleType name="additionaldata-type">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="boolean"/>
+			<xsd:enumeration value="byte"/>
+			<xsd:enumeration value="character"/>
+			<xsd:enumeration value="date-time"/>
+			<xsd:enumeration value="integer"/>
+			<xsd:enumeration value="ntpstamp"/>
+			<xsd:enumeration value="portlist"/>
+			<xsd:enumeration value="real"/>
+			<xsd:enumeration value="string"/>
+			<xsd:enumeration value="byte-string"/>
+			<xsd:enumeration value="xml"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!--
+	| Values for yes/no attributes such as Source.spoofed and
+	| Target.decoy.
+	-->
+	<xsd:simpleType name="yes-no-type">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="unknown"/>
+			<xsd:enumeration value="yes"/>
+			<xsd:enumeration value="no"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="port-range">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9]{1,5}(\-[0-9]{1,5})?"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="port-list">
+		<xsd:list itemType="idmef:port-range"/>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="ntpstamp">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="0x[A-Fa-f0-9]{8}.0x[A-Fa-f0-9]{8}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="mime-type">
+		<xsd:restriction base="xsd:string">
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	<!-- Section 3: Top-level element declarations. The IDMEF-Message
+	     element and the types of messages it can include. -->
+
+	<xsd:complexType name="IDMEF-Message">
+		<xsd:choice minOccurs="1" maxOccurs="unbounded">
+			<xsd:element ref="idmef:Alert"/>
+			<xsd:element ref="idmef:Heartbeat"/>
+		</xsd:choice>
+		<xsd:attribute name="version" type="xsd:decimal" fixed="1.0"/>
+	</xsd:complexType>
+	<xsd:element name="IDMEF-Message" type="idmef:IDMEF-Message"/>
+
+	<xsd:complexType name="Alert">
+		<xsd:sequence>
+			<xsd:element name="Analyzer" type="idmef:Analyzer"/>
+			<xsd:element name="CreateTime" type="idmef:TimeWithNtpstamp"/>
+			<xsd:element name="DetectTime" type="idmef:TimeWithNtpstamp" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="AnalyzerTime" type="idmef:TimeWithNtpstamp" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Source" type="idmef:Source" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="Target" type="idmef:Target" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="Classification" type="idmef:Classification"/>
+			<xsd:element name="Assessment" type="idmef:Assessment" minOccurs="0" maxOccurs="1"/>
+			<xsd:choice minOccurs="0" maxOccurs="1">
+				<xsd:element name="ToolAlert" type="idmef:ToolAlert"/>
+				<xsd:element name="OverflowAlert" type="idmef:OverflowAlert"/>
+				<xsd:element name="CorrelationAlert" type="idmef:CorrelationAlert"/>
+			</xsd:choice>
+			<xsd:element name="AdditionalData" type="idmef:AdditionalData" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="messageid" type="xsd:string" default="0"/>
+	</xsd:complexType>
+	<xsd:element name="Alert" type="idmef:Alert"/>
+
+	<xsd:complexType name="Heartbeat">
+		<xsd:sequence>
+			<xsd:element name="Analyzer" type="idmef:Analyzer"/>
+			<xsd:element name="CreateTime" type="idmef:TimeWithNtpstamp"/>
+			<xsd:element name="HeartbeatInterval" type="xsd:integer" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="AnalyzerTime" type="idmef:TimeWithNtpstamp" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="AdditionalData" type="idmef:AdditionalData" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="messageid" type="xsd:string" default="0"/>
+	</xsd:complexType>
+	<xsd:element name="Heartbeat" type="idmef:Heartbeat"/>
+
+	<!-- Section 4: Subclasses of the Alert class that provide more data for specific types of alerts. -->
+
+	<xsd:complexType name="CorrelationAlert">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="alertident" type="idmef:Alertident" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="OverflowAlert">
+		<xsd:sequence>
+			<xsd:element name="program" type="xsd:string"/>
+			<xsd:element name="size" type="xsd:string"/>
+			<xsd:element name="buffer" type="xsd:hexBinary"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="ToolAlert">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="command" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="alertident" type="idmef:Alertident" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<!-- Section 5: The AdditionalData element. This element allows an
+       alert to include additional information that cannot be encoded
+       elsewhere in the data model. -->
+
+	<xsd:complexType name="AdditionalData">
+		<xsd:choice>
+			<xsd:element name="boolean" type="xsd:boolean"/>
+			<xsd:element name="byte" type="xsd:byte"/>
+			<xsd:element name="character">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:minLength value="1"/>
+						<xsd:maxLength value="1"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="date-time" type="xsd:dateTime"/>
+			<xsd:element name="integer" type="xsd:integer"/>
+			<xsd:element name="ntpstamp" type="idmef:ntpstamp"/>
+			<xsd:element name="portlist" type="idmef:port-list"/>
+			<xsd:element name="real" type="xsd:decimal"/>
+			<xsd:element name="string" type="xsd:string"/>
+			<xsd:element name="byte-string" type="xsd:hexBinary"/>
+			<xsd:element name="xml" type="idmef:xmltext"/>
+		</xsd:choice>
+		<xsd:attribute name="type" type="idmef:additionaldata-type"/>
+		<xsd:attribute name="meaning" type="xsd:string"/>
+	</xsd:complexType>
+
+	<!-- Section 6: Elements related to identifying entities -
+       analyzers (the senders of these messages), sources (of
+       attacks), and targets (of attacks). -->
+
+	<xsd:complexType name="Analyzer">
+		<xsd:sequence>
+			<xsd:element name="Node" type="idmef:Node" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Process" type="idmef:Process" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Analyzer" type="idmef:Analyzer" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+		<xsd:attribute name="analyzerid" type="xsd:string" default="0"/>
+		<xsd:attribute name="name" type="xsd:string"/>
+		<xsd:attribute name="manufacturer" type="xsd:string"/>
+		<xsd:attribute name="model" type="xsd:string"/>
+		<xsd:attribute name="version" type="xsd:string"/>
+		<xsd:attribute name="class" type="xsd:string"/>
+		<xsd:attribute name="ostype" type="xsd:string"/>
+		<xsd:attribute name="osversion" type="xsd:string"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="Source">
+		<xsd:sequence>
+			<xsd:element name="Node" type="idmef:Node" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="User" type="idmef:User" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Process" type="idmef:Process" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Service" type="idmef:Service" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+		<xsd:attribute name="ident" type="xsd:string" default="0"/>
+		<xsd:attribute name="spoofed" type="idmef:yes-no-type" default="unknown"/>
+		<xsd:attribute name="interface" type="xsd:string"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="Target">
+		<xsd:sequence>
+			<xsd:element name="Node" type="idmef:Node" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="User" type="idmef:User" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Process" type="idmef:Process" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Service" type="idmef:Service" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="File" type="idmef:File" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="ident" type="xsd:string" default="0"/>
+		<xsd:attribute name="decoy" type="idmef:yes-no-type" default="unknown"/>
+		<xsd:attribute name="interface" type="xsd:string"/>
+	</xsd:complexType>
+
+	<!-- Section 7: Support elements used for providing detailed info about entities - addresses, names, etc. -->
+
+	<xsd:complexType name="Address">
+		<xsd:sequence>
+			<xsd:element name="address" type="xsd:string"/>
+			<xsd:element name="netmask" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+		<xsd:attribute name="ident" type="xsd:string" default="0"/>
+		<xsd:attribute name="category" type="idmef:address-category" default="unknown"/>
+		<xsd:attribute name="vlan-name" type="xsd:string"/>
+		<xsd:attribute name="vlan-num" type="xsd:string"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="Assessment">
+		<xsd:sequence>
+			<xsd:element name="Impact" type="idmef:Impact" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Action" type="idmef:Action" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="Confidence" type="idmef:Confidence" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Reference">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="url" type="xsd:string"/>
+		</xsd:sequence>
+		<xsd:attribute name="origin" type="idmef:reference-origin" default="unknown"/>
+		<xsd:attribute name="meaning" type="xsd:string"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="Classification">
+		<xsd:sequence>
+			<xsd:element name="Reference" type="idmef:Reference" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="ident" type="xsd:string" default="0"/>
+		<xsd:attribute name="text" type="xsd:string" use="required"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="File">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="path" type="xsd:string"/>
+			<xsd:element name="create-time" type="xsd:dateTime" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="modify-time" type="xsd:dateTime" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="access-time" type="xsd:dateTime" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="data-size" type="xsd:integer" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="disk-size" type="xsd:integer" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="FileAccess" type="idmef:FileAccess" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="Linkage" type="idmef:Linkage" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="Inode" type="idmef:Inode" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Checksum" type="idmef:Checksum" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="ident" type="xsd:string" default="0"/>
+		<xsd:attribute name="category" type="idmef:file-category" use="required"/>
+		<xsd:attribute name="fstype" type="xsd:string" use="required"/>
+		<xsd:attribute name="file-type" type="idmef:mime-type"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="Permission">
+		<xsd:attribute name="perms" type="idmef:file-permission" use="required"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="FileAccess">
+		<xsd:sequence>
+			<xsd:element name="UserId" type="idmef:UserId"/>
+			<xsd:element name="permission" type="idmef:Permission" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="Inode">
+		<xsd:sequence>
+			<xsd:element name="change-time" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:sequence minOccurs="0" maxOccurs="1">
+				<xsd:element name="number" type="xsd:string"/>
+				<xsd:element name="major-device" type="xsd:string"/>
+				<xsd:element name="minor-device" type="xsd:string"/>
+			</xsd:sequence>
+			<xsd:sequence minOccurs="0" maxOccurs="1">
+				<xsd:element name="c-major-device" type="xsd:string"/>
+				<xsd:element name="c-minor-device" type="xsd:string"/>
+			</xsd:sequence>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="Linkage">
+		<xsd:choice>
+			<xsd:sequence>
+				<xsd:element name="name" type="xsd:string"/>
+				<xsd:element name="path" type="xsd:string"/>
+			</xsd:sequence>
+			<xsd:element name="File" type="idmef:File"/>
+		</xsd:choice>
+		<xsd:attribute name="category" type="idmef:linkage-category" use="required"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="Checksum">
+		<xsd:sequence>
+			<xsd:element name="value" type="xsd:string"/>
+			<xsd:element name="key" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+		<xsd:attribute name="algorithm" type="idmef:checksum-algorithm" use="required"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="Node">
+		<xsd:sequence>
+			<xsd:element name="location" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:choice>
+				<xsd:element name="name" type="xsd:string"/>
+				<xsd:element name="Address" type="idmef:Address"/>
+			</xsd:choice>
+			<xsd:element name="Address" type="idmef:Address" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="ident" type="xsd:string" default="0"/>
+		<xsd:attribute name="category" type="idmef:node-category" default="unknown"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="Process">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="pid" type="xsd:integer" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="path" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="arg" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="env" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="ident" type="xsd:string" default="0"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="Service">
+		<xsd:sequence>
+			<xsd:choice>
+				<xsd:sequence>
+					<xsd:element name="name" type="xsd:string"/>
+					<xsd:element name="port" type="xsd:integer" minOccurs="0" maxOccurs="1"/>
+				</xsd:sequence>
+				<xsd:sequence>
+					<xsd:element name="port" type="xsd:integer"/>
+					<xsd:element name="name" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+				</xsd:sequence>
+				<xsd:element name="portlist" type="idmef:port-list"/>
+			</xsd:choice>
+			<xsd:element name="protocol" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="SNMPService" type="idmef:SNMPService" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="WebService" type="idmef:WebService" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+		<xsd:attribute name="ident" type="xsd:string" default="0"/>
+		<xsd:attribute name="ip_version" type="xsd:integer"/>
+		<xsd:attribute name="iana_protocol_number" type="xsd:integer"/>
+		<xsd:attribute name="iana_protocol_name" type="xsd:string"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="WebService">
+		<xsd:sequence>
+			<xsd:element name="url" type="xsd:anyURI"/>
+			<xsd:element name="cgi" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="http-method" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="arg" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="SNMPService">
+		<xsd:sequence>
+			<xsd:element name="oid" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="messageProcessingModel" type="xsd:integer" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="securityModel" type="xsd:integer" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="securityName" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="securityLevel" type="xsd:integer" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="contextName" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="contextEngineID" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="command" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="User">
+		<xsd:sequence>
+			<xsd:element name="UserId" type="idmef:UserId" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="ident" type="xsd:string" default="0"/>
+		<xsd:attribute name="category" type="idmef:user-category" default="unknown"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="UserId">
+		<xsd:choice>
+			<xsd:sequence>
+				<xsd:element name="name" type="xsd:string"/>
+				<xsd:element name="number" type="xsd:integer" minOccurs="0" maxOccurs="1"/>
+			</xsd:sequence>
+			<xsd:sequence>
+				<xsd:element name="number" type="xsd:integer"/>
+				<xsd:element name="name" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			</xsd:sequence>
+		</xsd:choice>
+		<xsd:attribute name="ident" type="xsd:string" default="0"/>
+		<xsd:attribute name="type" type="idmef:id-type" default="original-user"/>
+		<xsd:attribute name="tty" type="xsd:string"/>
+	</xsd:complexType>
+
+	<!-- Section 8: Simple elements with sub-elements or attributes of a special nature. -->
+
+	<xsd:complexType name="Action">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="category" type="idmef:action-category" default="other"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="Confidence">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="rating" type="idmef:confidence-rating" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="TimeWithNtpstamp">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:dateTime">
+				<xsd:attribute name="ntpstamp" type="idmef:ntpstamp" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="Impact">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="severity" type="idmef:impact-severity"/>
+				<xsd:attribute name="completion" type="idmef:impact-completion"/>
+				<xsd:attribute name="type" type="idmef:impact-type" default="other"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="Alertident">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="analyzerid" type="xsd:string"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="xmltext">
+		<xsd:complexContent mixed="true">
+			<xsd:restriction base="xsd:anyType">
+				<xsd:sequence>
+					<xsd:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+				</xsd:sequence>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>
+

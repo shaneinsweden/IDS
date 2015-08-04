@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="c90b9745-3b84-4578-9e2d-459f6809cb91"
+  name="WinPcap"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="d784b211-bb4c-48be-91d6-cd05e78b811f"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSharpPcap.WinPcap"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="78bd852b-1f82-422d-b255-b6d97b2bb9ef"
+        name="StatisticsModePacket"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="de46dd9d-cf2a-4170-bd40-f625a4989515"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap.WinPcap Type%3DStatisticsModePacket"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2e395359-1025-4ff2-b148-0144ad5a00df"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f8ee10a3-8ea5-4541-aea9-5479846cfea3">
+                <propertyInstance
+                  Id="72cdb4aa-756d-420b-8d8c-8683a200cefd"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b04d01e5-0883-42a9-af41-3e444a103d24">
+                <propertyInstance
+                  Id="405301c6-089d-45c2-8e6b-dbf25d0ed6ff"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b00f5df4-b9c1-4743-8488-e15eaf18cc5f">
+                <propertyInstance
+                  Id="ddc378dc-a696-499a-ab68-51b09facbc2c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e45dcf8a-5f6f-4c92-849e-850a08096b4e">
+                <propertyInstance
+                  Id="5aba14aa-a89b-4285-8c66-a42ee32c303b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="87bc532c-e4ec-4b43-b80c-b2ab7998a3c1">
+                <propertyInstance
+                  Id="79eb6381-a1a5-40dd-86ca-c0f21ec73545"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8017f40f-f3c4-402f-beb4-b8c5ff2ec91a"
+        name="StatisticsModeEventArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a4584268-e89a-4662-a9d6-f9012c5a34f1"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap.WinPcap Type%3DStatisticsModeEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a755b24c-f118-46ee-b32f-2e1389b9d997"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eaae7c0d-39d5-47af-9dd0-5d0c0923c5dd">
+                <propertyInstance
+                  Id="187ca9a8-b804-4455-b454-4e7f428cd93f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="31953e36-9648-4978-9fb4-cea7b3eca348">
+                <propertyInstance
+                  Id="2ca29985-2aa0-4d17-adda-2e8c83085abb"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="949b74d5-afd1-4303-a680-d6bbb94d314d">
+                <propertyInstance
+                  Id="cb512a53-1566-452e-9b59-9cb5645b5553"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1ddd85c1-c9b7-4e6c-b712-f4ca9fd433a5">
+                <propertyInstance
+                  Id="6bb172ed-e6f2-4bdd-b666-002efa5d6b8a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="73466e51-e811-4ce0-bc6a-e8c73c3819a0">
+                <propertyInstance
+                  Id="a301cf2b-0233-428d-b3b5-017293dac13b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="d878cf9e-6feb-4af9-9015-2446e7288ace"
+            isSubstitutable="false">
+            <classMoniker
+              Id="eb160920-6e72-4b61-a2ed-0d09f22e4c92"
+              LastKnownName="CaptureEventArgs"
+              LastKnownLocation="Package3_0855.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

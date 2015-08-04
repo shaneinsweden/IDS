@@ -1,0 +1,2355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="01e60174-89ae-4a53-8c0a-9ea0c1f352cb"
+  name="Sensors" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="9efcaa3a-e8e1-41d7-bfc1-11a04bd8646d"
+        name="BaseSensor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="96a09d9b-f25a-4965-add8-2c5208cf9b0f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9bae12ae-88f6-4fc0-8d3c-dbe5216261db"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9a7961a2-7eff-4955-9183-ffddc960a52f">
+                <propertyInstance
+                  Id="90e4627e-f019-46e0-8a77-77f312e14c25"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5ed25719-27b1-48d8-b404-0d9e8ca4fdd3">
+                <propertyInstance
+                  Id="8caf9f31-05a4-4def-867d-0dfaec8c7b3a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ebf02e04-7ffd-4a46-b7d7-1ee853426c51">
+                <propertyInstance
+                  Id="a266f4fc-69b0-4af5-8468-8845b31dffe8"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f84e7068-9670-4317-b7e4-f251b481b7db">
+                <propertyInstance
+                  Id="37f0ee0b-79e4-4ec1-9bf9-04dc803421d2"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="17909ec8-ab3e-4a08-943b-2921975e979c">
+                <propertyInstance
+                  Id="d4a8f0c1-fda0-4d5a-9232-70dd6f375d60"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="be475b54-097f-4d46-bc4d-637596cf670e">
+            <interfaceMoniker
+              Id="bfa2b5be-b369-49c0-8089-7d467ee85622"
+              LastKnownName="ISensor"
+              LastKnownLocation="Package_1708.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="4bf4411b-d449-4873-b3c1-971f1cf89311"
+            name="_currentCaptureDevice"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f0eaf52d-b6b8-4a98-9b92-26745ff13170"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D_currentCaptureDevice"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5b0093a8-397e-4f6c-af28-5dda7f72d8c1"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e213f0ed-8dbb-4333-873b-e7c3905206f9">
+                    <propertyInstance
+                      Id="f2aa087b-9012-428e-ad3b-55d1b0d5e077"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a64883ac-e85b-4d74-bb0d-3b265ca9b8de">
+                    <propertyInstance
+                      Id="f55bcc33-cc54-46a2-b5b6-24f801a0a81a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db3fa9b0-32fc-4521-be01-ace144aef4ad">
+                    <propertyInstance
+                      Id="d17ad14c-29f7-469e-adb8-7b48fedae79e"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f608e328-987f-4a81-854d-c3e9633c1d66">
+                    <propertyInstance
+                      Id="3700ae65-647d-487c-b41a-a4311e1c32fe"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f74ff6e-e4a9-4d2c-8df2-30a64d81d57b">
+                    <propertyInstance
+                      Id="306affe9-534e-4dd1-896e-baff132de58b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="2875c3b4-6709-46b4-a137-ae4ce0ac33c3"
+                LastKnownName="ICaptureDevice"
+                LastKnownLocation="Package3_0855.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f64a9d1b-4111-4416-ab49-786c75183783"
+            name="_lastTimeval"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="be51f522-b58c-4393-9986-67864ac0370e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D_lastTimeval"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="30f60bd3-77a7-42fa-b5b5-e0571701bb8d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b06d55b4-7dcf-4476-b5c0-bae950f0ff3d">
+                    <propertyInstance
+                      Id="5a7f502a-9ed2-4db8-bb76-01cb06c1c219"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="767d66c4-a67a-498e-a268-fb10dbe0fb43">
+                    <propertyInstance
+                      Id="4f178e2e-d0a3-4a42-bc12-fd4ce6072a12"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b43d93e0-d82e-441d-a27d-f830446216b8">
+                    <propertyInstance
+                      Id="317c0919-13ff-4260-ab79-f570b1a232d1"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c21bd26c-6b24-4609-9d07-70af1e71ebd4">
+                    <propertyInstance
+                      Id="522fccdd-d612-4a93-870c-c1bf83114ad2"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce4f7bd3-ffe0-4d13-a027-92fa91ea30ee">
+                    <propertyInstance
+                      Id="7597bd19-6f99-4d27-9835-6db50e881c72"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="35015a84-594b-451e-9a69-e8ece9c99fb4"
+                LastKnownName="PosixTimeval"
+                LastKnownLocation="Package3_0855.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ad2cdc78-9bf9-43c8-8f31-0adb75d9e1a9"
+            name="_reportMethods"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="34450119-237d-4964-93a0-869ef525f6ff"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D_reportMethods"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="513a3dec-3540-43a2-b6af-83481503665c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="849c8005-6454-4e85-a6de-950decf7fa10">
+                    <propertyInstance
+                      Id="95acca8f-5ade-4309-9404-73d6f257cae0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0f3e3ed-bdca-4349-b70b-b930fe5db173">
+                    <propertyInstance
+                      Id="ecadd89d-e2ba-4237-b516-c85cc64da87f"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dea990b0-dac9-4abe-b60a-77542ba75387">
+                    <propertyInstance
+                      Id="9d8c557f-92f0-4bfc-8680-5407987d53cc"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6601f743-3746-4501-aa78-a50d792ade5a">
+                    <propertyInstance
+                      Id="a4e7ee47-6ae0-4856-854b-6c868d3b0f05"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4cb576f-2123-4185-9b1e-fe03b8a1234b">
+                    <propertyInstance
+                      Id="eb23277b-bd25-4752-9acd-f6affd29e6dc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="13ce9afd-6d06-4dc5-ab61-eccb7c619196"
+                LastKnownName="List&lt;ISensorReport‎&gt;"
+                LastKnownLocation="Package5_0851.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3ed1c05c-da34-4fc2-a80e-25c665baa3a3"
+            name="_sensorId"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b94fc5a7-1910-41f7-be92-b1e59d801449"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D_sensorId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e7ced45c-3fca-42ea-a05a-c10846edbb68"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9190e543-ef0c-4bea-b920-43cb73cbf327">
+                    <propertyInstance
+                      Id="ea909a7a-9617-49d0-925f-8f07a735dcc0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27d7c125-3f90-4f25-a99b-2dda48cd53bd">
+                    <propertyInstance
+                      Id="9253c7da-a275-4ef0-a87e-a5895b80acd9"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3083704-a9ef-4ab2-8368-5300031cef70">
+                    <propertyInstance
+                      Id="22b6f52d-bcd3-478e-b66f-f23498676e47"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64f2a4b1-80b8-4858-866a-ccaa886c4bf2">
+                    <propertyInstance
+                      Id="cbb38290-a51d-438b-a34e-5f7146765648"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="647627ff-2bcd-41ff-b429-f2dd782eb039">
+                    <propertyInstance
+                      Id="642c7b0b-95c9-477a-9d92-3ee05fbe8684"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="d21b2c18-62c3-4338-8bc9-2005994c44b9"
+                LastKnownName="Guid"
+                LastKnownLocation="Package3_0851.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="98e2c56c-c2b7-4e19-8049-9ef9c4e86170"
+            name="BaseSensor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5c487645-6161-4e83-a771-2133e071f5fb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3D(Name%3DSensorMode ParentType%3DEnumerations))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1a73e91d-728a-4dd7-ad7d-d89b1d754d4f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d77b139e-2fda-4175-80c6-12262c298a5a">
+                    <propertyInstance
+                      Id="1061a631-9700-4925-9031-9670488c8a91"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0468fd6-9b41-42bd-ba18-aacf1260cc27">
+                    <propertyInstance
+                      Id="93397ab6-6e6e-4a96-afd0-5f0d5268b75b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93ab913b-0dd3-4f32-b03d-ef620e4918c3">
+                    <propertyInstance
+                      Id="15f85e15-c220-4ec4-afe2-aa05eb0e763c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27cd1bd2-d0a6-4af9-bba1-4f706afdd3b4">
+                    <propertyInstance
+                      Id="5ff1acd4-4173-41ba-99db-283eea0de6dc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc7d86d3-465e-4399-9992-c858b2536aee">
+                    <propertyInstance
+                      Id="ee3a9e62-6cce-43f5-b19c-d519be36c79d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0228665d-c9ce-4af2-8d79-6f17822c5970">
+                    <propertyInstance
+                      Id="9ad215ca-f0b0-4a44-a898-82192aa34b6d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="683d91ed-c6a4-4c92-8898-3d9b1440f23c"
+                  name="deviceToCaptureInfo"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4a57f590-22dd-426f-b7d1-cb6a4c3d7823"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3D(Name%3DSensorMode ParentType%3DEnumerations))]) ParameterIdentifier%3DdeviceToCaptureInfo"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="354a353e-6856-44ea-b075-463819ce661e"
+                      LastKnownName="CaptureDeviceDescription"
+                      LastKnownLocation="Package1_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c4935c68-b692-4b3d-8fad-659301b839a0"
+                  name="filter"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7aab3fbc-9d44-4f7f-8209-febae977b0ec"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3D(Name%3DSensorMode ParentType%3DEnumerations))]) ParameterIdentifier%3Dfilter"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="041507c9-a1b8-4347-aa2e-5c19e74d679a"
+                  name="deviceMode"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9b24d97b-8339-4465-ab94-1ec014ca2d22"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3D(Name%3DSensorMode ParentType%3DEnumerations))]) ParameterIdentifier%3DdeviceMode"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="1273f744-5d38-497b-9e4a-99c3487918aa"
+                      LastKnownName="DeviceMode"
+                      LastKnownLocation="Package3_0855.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e44230f2-8ad4-4231-8611-6021553b542f"
+                  name="reportMethods"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="171c5afe-ada8-413d-b5bd-75e2d2222adf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3D(Name%3DSensorMode ParentType%3DEnumerations))]) ParameterIdentifier%3DreportMethods"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="13ce9afd-6d06-4dc5-ab61-eccb7c619196"
+                      LastKnownName="List&lt;ISensorReport‎&gt;"
+                      LastKnownLocation="Package5_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0e523695-4ad2-425a-9c8a-11e16e229132"
+                  name="heartBeatDelay"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="124d7ccc-cfdc-433b-a02b-7eb37a6805ec"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3D(Name%3DSensorMode ParentType%3DEnumerations))]) ParameterIdentifier%3DheartBeatDelay"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="33f10cf3-1931-4c6c-8f13-7e8b0d3a3c36"
+                  name="sensorMode"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="66490b31-1d30-4e62-abe0-74ed50753c5e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3D(Name%3DSensorMode ParentType%3DEnumerations))]) ParameterIdentifier%3DsensorMode"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="b27bedfa-0527-4e7f-9706-bc5956b3f201"
+                      LastKnownName="SensorMode"
+                      LastKnownLocation="Package1_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="407c8bd2-de8d-4ea7-a84a-2c3884304bd7"
+            name="GetDeviceToCapture"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="141bb581-4cf3-49fd-a5f9-403443f544fd"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3DGetDeviceToCapture OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="eb2d2d3b-26af-45ed-8f47-2765e8b8462c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9a828e0-0ca9-48d2-a5c0-0695ad1c93ca">
+                    <propertyInstance
+                      Id="88e5cb00-5a02-43d9-b27d-285212431057"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88b6813e-9220-41c1-9bb3-63c689598af1">
+                    <propertyInstance
+                      Id="a93b9534-8223-4f2f-9022-2f5ca8588498"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="064da070-6891-4a5b-8f07-5ea7dd7bfd48">
+                    <propertyInstance
+                      Id="b317d9c1-fbb9-476a-9880-848d5cc6c439"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a4252b3-ac1f-49e0-862c-06a5bb44c5d0">
+                    <propertyInstance
+                      Id="0cebeee3-75ee-4a81-84c9-58b13411387f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0172f82a-05c7-474d-b759-ebef6281b27b">
+                    <propertyInstance
+                      Id="bf8b9ee3-4e26-4137-a774-01530eca63e0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1530ce8-73e7-49e5-9095-f678806f2651">
+                    <propertyInstance
+                      Id="98e1fbbd-bb1e-4524-a5d3-5ee68fc46c64"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f8b4d756-417b-49aa-a7a1-22605aaabfdf"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="2875c3b4-6709-46b4-a137-ae4ce0ac33c3"
+                      LastKnownName="ICaptureDevice"
+                      LastKnownLocation="Package3_0855.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="213bf06d-5749-4cb1-833a-737e0ef095be"
+                  name="deviceToCaptureInfo"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d8df2840-fbd6-42bb-81cc-4aea4ee23817"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3DGetDeviceToCapture OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)]) ParameterIdentifier%3DdeviceToCaptureInfo"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="354a353e-6856-44ea-b075-463819ce661e"
+                      LastKnownName="CaptureDeviceDescription"
+                      LastKnownLocation="Package1_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b27f515a-0eb3-432d-8af8-208c9d0eccf3"
+            name="SendHeartbeat"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="422b4f29-0474-4680-96af-707f376f7b2b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3DSendHeartbeat OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="502fb34b-1008-4703-ad09-9b5736490723"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e28cd314-9362-4c01-9a8a-2da397f5db42">
+                    <propertyInstance
+                      Id="cbe46a09-191f-4945-ac4a-13f226a33c77"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9431973-54c7-4c3f-9748-915aba4f84ed">
+                    <propertyInstance
+                      Id="6cbe3d34-0007-4621-8074-f12d18590711"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28c75b94-4730-4df3-acb6-91f2c7a2670f">
+                    <propertyInstance
+                      Id="4c5a197e-4d5f-4421-a583-fd41488c92bd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7e37bc7-9d4f-420a-a1ee-c52159cdc394">
+                    <propertyInstance
+                      Id="30385356-b7b9-4f29-ace7-721d450dfdaa"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ddf039b-9725-4498-a315-5ee6aaa62c13">
+                    <propertyInstance
+                      Id="16bec4e3-72db-48b6-8810-8089753352ae"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a023aab0-7553-4eb2-9f64-acef4afcce3d">
+                    <propertyInstance
+                      Id="f232d76c-8133-45d8-8ed6-fec89a2bdea3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e4032a1e-3a7e-49ed-9a5b-4f71fe288fce"
+                  name="reportMethods"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4c0b47a9-fdf2-4d34-bc71-32fe8d11c8b3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3DSendHeartbeat OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))]) ParameterIdentifier%3DreportMethods"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="6aa13593-6d10-4e93-9055-013819885e8d"
+                      LastKnownName="IEnumerable&lt;ISensorReport‎&gt;"
+                      LastKnownLocation="Package5_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f1b4f524-04cd-42be-9de9-b4423a900973"
+            name="StartHeartbeat"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d3673815-2c73-4f64-8a24-c68e7832c4b7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3DStartHeartbeat OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5804a853-daac-4ff5-bf56-42202be1147b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b8e4f58-7133-4cd4-86f5-a26c03b4fea6">
+                    <propertyInstance
+                      Id="d7af52cf-90e2-4151-91ea-d491aaffe505"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5899f43a-e547-4731-b5c3-44be9ea345b2">
+                    <propertyInstance
+                      Id="f84ddbfc-280c-40c0-8ecd-4ad409fae21a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="414ab798-78de-4caa-978e-81ab821ca249">
+                    <propertyInstance
+                      Id="2d68e9bc-33b6-45e6-9930-9c662edee4db"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35ee78f4-ec6c-42eb-9e7f-ec9ace0d4a60">
+                    <propertyInstance
+                      Id="da20e7c1-3196-4e9f-b6da-e22d770f54ec"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="896afe6f-46d6-4ab1-8fec-ffb0c687b7ee">
+                    <propertyInstance
+                      Id="3c9e3072-9941-4618-9a62-3e3778607808"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4378addb-39ae-4af6-8446-0edbe5b594c8">
+                    <propertyInstance
+                      Id="737a85d6-3ac8-4f54-9195-894dbfb60bde"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c22a0179-3cc2-44bf-aefc-5c148e2c8777"
+                  name="heartBeatDelay"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fe6850ec-4bc8-4f9a-b475-fda325498c66"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3DStartHeartbeat OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))]) ParameterIdentifier%3DheartBeatDelay"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f36cdfbf-fc07-4f1f-9195-9c0aaec87219"
+                  name="reportMethods"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4d3d7217-45b3-4f7f-adc7-c6ada4b5d505"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3DStartHeartbeat OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))]) ParameterIdentifier%3DreportMethods"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="13ce9afd-6d06-4dc5-ab61-eccb7c619196"
+                      LastKnownName="List&lt;ISensorReport‎&gt;"
+                      LastKnownLocation="Package5_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b6bd69e5-cf24-4b70-89a3-fa2025c86c74"
+            name="_currentCaptureDevice_OnPacketArrival"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ec67f651-09bc-4b94-8283-bba1089ef408"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3D_currentCaptureDevice_OnPacketArrival OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DCaptureEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="30a0bbe0-7b2c-4f34-b328-d3e080fc4273"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3410f7cc-1692-4af9-9858-3df1b125fc84">
+                    <propertyInstance
+                      Id="7dec5743-365a-408b-8974-9fc29e2f0410"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c20f7930-4d9b-46a3-b990-72c12c10cf22">
+                    <propertyInstance
+                      Id="1e850332-539f-45b2-895a-266cf01e88f3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7fd0f45c-9449-4d60-819d-37079e118733">
+                    <propertyInstance
+                      Id="81fbf40b-b48e-45a8-8bd6-0178edeeccec"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1cedbd8c-9347-43d9-a70d-fcd2a641b188">
+                    <propertyInstance
+                      Id="1cc3c537-00c5-4ef1-b442-7043c29600d5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7208b76f-c996-4cba-9f0e-282e228494bb">
+                    <propertyInstance
+                      Id="47af8506-e26a-4336-93ea-f8d78ed046f3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="befa7f9b-078b-4b15-a973-37ad279ba9df">
+                    <propertyInstance
+                      Id="e7b2c3f3-105e-4376-8844-07fd9c9810b1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c5c61feb-2ce9-424d-9d0d-fc3ccb820cb7"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fd7878ed-060d-430c-8a80-6a9621efc0e7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3D_currentCaptureDevice_OnPacketArrival OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DCaptureEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="807f3e27-51f4-49c5-9dcb-6fd51c8bf34d"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package3_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="58ba709b-89bc-4539-a674-99444eb23f48"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5035813d-cdba-429a-846c-44f06763970a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3D_currentCaptureDevice_OnPacketArrival OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DCaptureEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="eb160920-6e72-4b61-a2ed-0d09f22e4c92"
+                      LastKnownName="CaptureEventArgs"
+                      LastKnownLocation="Package3_0855.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7c8f1d2a-6b99-47f2-bdc1-989329985136"
+            name="device_OnPcapStatistics"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="212ee57e-5cd9-41dc-8ae7-dfc1ce2a9a99"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3Ddevice_OnPcapStatistics OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap.WinPcap Type%3DStatisticsModeEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cfc3ca05-597e-43d7-bbac-c2cdec75f2e7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf3516eb-88bc-4ee8-8b24-b99ca6700bfc">
+                    <propertyInstance
+                      Id="c5bb33f9-0c7d-44ba-bd24-a143f14396db"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="779215c4-43d4-49e3-a146-c4046f514712">
+                    <propertyInstance
+                      Id="9d8863a6-d7fc-4b5e-ac80-6d6dc9f818f5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4030e60d-868b-434a-8621-77d406bcdee2">
+                    <propertyInstance
+                      Id="061f9092-0589-4944-8eb9-f46fdcf24d8b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c791662b-e312-4265-8651-94f09a0f59fc">
+                    <propertyInstance
+                      Id="06f47a58-8eba-48cb-a41f-a7a377a0095a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a41109e5-6caa-4a3b-8f7c-75a09251afe2">
+                    <propertyInstance
+                      Id="215a575e-706c-48c1-b589-fe8ae7ad8fd0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bcb0ec38-829a-45a5-a224-dcd1489119f9">
+                    <propertyInstance
+                      Id="cbd6b053-4806-49d9-9a62-32724faead56"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4d2a3dbb-9a67-4e11-85ba-3a18710ce714"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="947109b8-d899-4cc5-9e88-26077a6f6b48"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3Ddevice_OnPcapStatistics OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap.WinPcap Type%3DStatisticsModeEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="807f3e27-51f4-49c5-9dcb-6fd51c8bf34d"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package3_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ace824d4-3e89-4754-b0c4-3d497369427b"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5715e1f9-048b-4aad-8138-a691dd0abaaf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3D(Name%3Ddevice_OnPcapStatistics OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap.WinPcap Type%3DStatisticsModeEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="8017f40f-f3c4-402f-beb4-b8c5ff2ec91a"
+                      LastKnownName="StatisticsModeEventArgs"
+                      LastKnownLocation="Package4_0855.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bc2e464b-efb1-4b4a-97dd-e0470d8a85f6"
+            name="GetSensorId"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5994a569-b879-4c86-bc56-0d12d7b5bda7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3DGetSensorId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e08ba025-88b9-4667-adff-fd07a2d03795"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61442ffb-22b0-40f3-b1b4-11f95b8cf299">
+                    <propertyInstance
+                      Id="17c3a188-11d9-4f24-947f-d39d8cf3f7a6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee4caa63-2c1d-49ca-bee1-d31b15c823b1">
+                    <propertyInstance
+                      Id="655d6f27-13bc-489d-a5de-596ae2d3c064"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8164edf5-54ee-4266-abd3-a2bb6b1d890b">
+                    <propertyInstance
+                      Id="31329013-54f5-43bf-9954-da4860c0cf74"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb3140c2-17e7-408e-8127-18e9f7c47ad5">
+                    <propertyInstance
+                      Id="26c85307-6b30-4079-ba47-98166bce6046"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e0ee3d2-b91d-4793-9bb4-0ceac3ecdc65">
+                    <propertyInstance
+                      Id="1686a2b8-d9ba-4072-8372-c689b5d05107"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dfad6bfe-51fd-4bf2-b8d9-c399be8194d0">
+                    <propertyInstance
+                      Id="d8f7c9eb-2818-4a78-b302-b18c954fe6f2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="616969f4-7f0a-4b20-bcf8-ff82d757638f"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="08ce4c43-c36e-4f64-a959-ec7ec52528c2"
+            name="StartCapturing"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="aedfa78e-8c45-4fd7-9c5f-8df118ec75cd"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3DStartCapturing"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="114af30e-dcbb-4d3b-91a0-c9bdcd422d92"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d36aaf1-e7b1-45da-acc5-2f6b5869ee5e">
+                    <propertyInstance
+                      Id="1bd07c0e-f44f-4cdd-b6c5-ab8bda22f228"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a44d3c4-697d-43f6-bf5a-eb674ee2a37e">
+                    <propertyInstance
+                      Id="1fc3ed28-5df4-49ad-a583-a50e6c9784e8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc05b313-c51e-46f1-a546-a297189ff1b3">
+                    <propertyInstance
+                      Id="40ba118a-92d5-4f45-bae1-0a23e269da8f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8efaf72b-e4cd-42a0-bd5d-7e0fffc2e25c">
+                    <propertyInstance
+                      Id="24dc22cc-36d7-4936-8fa5-f61b01b167ea"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="794f70b0-0571-4eff-9eda-e212b25cdf98">
+                    <propertyInstance
+                      Id="e490acf5-cc2d-413c-bb0d-0025b1d0ef5f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b600e7e2-2d3a-4d54-8dbf-d491027d269a">
+                    <propertyInstance
+                      Id="46689402-6ebb-4ddc-bb86-2eb68ddfa2cb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="4de057ea-071e-4c8e-8644-b430fc6b4d74"
+            name="StopCapturing"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="94912ed1-f0ce-48cd-bb6c-9ee4fd5eb15c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DBaseSensor Member%3DStopCapturing"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="44b6071b-8f59-44aa-aa73-c0523f17bac3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0cc33f6-da29-4587-9d1e-bd518d1c30a7">
+                    <propertyInstance
+                      Id="35ad27ad-9bc5-4c70-aace-60373bfae343"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da913419-501c-492e-80ad-341e258fca0a">
+                    <propertyInstance
+                      Id="f3503f48-4606-4200-b738-15abd103b1ee"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="baa010ce-5cad-4c36-a32c-b96ff020066c">
+                    <propertyInstance
+                      Id="5ce7b1db-747b-46e4-b1f6-21a79dae121d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a279684-048f-49ba-b225-d329f72afffa">
+                    <propertyInstance
+                      Id="e1859eeb-caec-4835-a25b-4f2810f2ef2d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="047fd90c-9fec-4c67-83b8-6468b230ce5a">
+                    <propertyInstance
+                      Id="9f47f3f8-9e3b-4348-a764-76de6630b064"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e2dc82e-a172-436c-9af2-40d05bf5e585">
+                    <propertyInstance
+                      Id="7f4ca786-a637-490f-a20a-a05b1387ceb0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="bfa2b5be-b369-49c0-8089-7d467ee85622"
+        name="ISensor"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="f3dd2990-cec9-42d8-a9eb-92c188cd15ce"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DISensor"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="65e3f860-1f55-4660-ac76-b36469d98a5f"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="04450f09-71c6-43e7-9e5a-9c411a876278">
+                <propertyInstance
+                  Id="f11778c9-1054-4da8-9e08-33d4399bc037"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3756d6bd-8d36-4c90-bc47-f223137ad16a">
+                <propertyInstance
+                  Id="9b8be392-9cd7-4631-b09f-9ffc1162fa0c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="74d9a568-7982-4531-8630-1262d63f660a">
+                <propertyInstance
+                  Id="0f9395b5-8379-4526-be37-c66f94e971a9"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3fba39bd-9968-44a9-95b8-2152c05fef03">
+                <propertyInstance
+                  Id="a74f2aa6-8dfb-4dc9-886f-cb39cd11817b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="bd312b0f-81bd-4094-9b5a-b280b1b6f24c"
+            name="GetSensorId"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="24b90fc9-69c9-4a4e-b0d4-76d0d3fe59fd"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DISensor Member%3DGetSensorId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="14d66415-225d-4b0e-afcf-6da5868a5cef"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f076214a-7a0b-4105-8181-0c33e10657b4">
+                    <propertyInstance
+                      Id="3db6b93d-916f-46e9-bddc-33e85c03afa5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58d680c8-5adf-4e53-9a7e-5feffc99492e">
+                    <propertyInstance
+                      Id="44e05ad9-1d15-44dc-88ab-af14123e1340"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3b99354-26dd-432b-8b4c-29fbe686b0db">
+                    <propertyInstance
+                      Id="7c7c18bb-2798-4ca0-ba7c-324d1898446a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36308c9f-5544-4b66-8519-8da922c378ca">
+                    <propertyInstance
+                      Id="0cae9ebc-4425-4cc4-ae0c-877836c87054"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ac0c81a-0cad-43e4-baee-ae00f8130c29">
+                    <propertyInstance
+                      Id="ce905bd2-7ca9-43a4-8cc4-65bc105feab7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07be6bba-fc92-48b8-8543-d04395d61074">
+                    <propertyInstance
+                      Id="00550c93-5e18-4a8a-8df8-cbfd0d5c5bb3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4c209c4c-1967-45fd-8792-f7197aa9bd16"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a15c0164-762d-47ed-80ce-4d68df848f95"
+            name="StartCapturing"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bfe10929-5cf0-405a-8bca-ea0c5d2de9ae"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DISensor Member%3DStartCapturing"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ee55d95e-4028-44df-bb45-fc3a15724452"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a5a637b-2e58-442a-9bb4-0a02eb537769">
+                    <propertyInstance
+                      Id="8be494f3-8c64-4d81-a1c5-e88d310a0b10"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5c40e1f-2db2-47e8-8af3-e4c6e48f3640">
+                    <propertyInstance
+                      Id="294c3619-3f1f-4c23-b12f-dd07efccafb3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac03c9eb-6945-4b01-b121-2029a178f5dc">
+                    <propertyInstance
+                      Id="8a333309-78b1-4cc8-a8ff-8bc6d058ec98"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c63dd93-6869-4b08-96a3-3ab0917c6932">
+                    <propertyInstance
+                      Id="7c521e57-1235-4268-88bf-08f2f36a9c2e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a129fca-b7cb-4f89-92d7-8b16ebf45f48">
+                    <propertyInstance
+                      Id="5d8880d1-8e16-41c5-87b4-0a8db439caea"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46856511-a76e-44d2-ae5f-6b57c2397f02">
+                    <propertyInstance
+                      Id="15ed9fa1-d641-4410-b9f3-6e5aeb7a2d59"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="89942bda-b9f7-4383-aa2a-fccbcd5a171b"
+            name="StopCapturing"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9cfa269e-0b4d-4c8d-b9b0-d2373699a14f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DISensor Member%3DStopCapturing"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6b647a73-4640-4af1-8dd1-56e8c2d01541"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3559bd2a-90fe-4ace-bec1-e679056540db">
+                    <propertyInstance
+                      Id="a1308e3a-6c00-4967-a8f7-c91d9febb6ed"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60cfcaac-a5f3-4991-8230-656634608166">
+                    <propertyInstance
+                      Id="b604615c-e07c-4696-9cb6-127f9304f180"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88cd75c3-699f-4d59-8272-a4a2ba733b9d">
+                    <propertyInstance
+                      Id="0a303e9a-8dc8-4448-ba80-9edc1b9bc929"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a260f2a9-8d90-49d2-9191-f31d0530033c">
+                    <propertyInstance
+                      Id="6634e1c1-a406-42aa-a570-545bb7b6ef2c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46d9c2ae-5fdf-4911-852e-560b1429e638">
+                    <propertyInstance
+                      Id="8f327a85-1d91-4575-88e2-063c0caf5d00"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a0111ca-aaf9-4b0d-8f6e-cbaa6d4e6969">
+                    <propertyInstance
+                      Id="7cfa56ba-a914-4440-b302-e2f314044613"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c56b2a95-04f9-4aa9-b091-d6ab7a7b8f2c"
+        name="FtpServerDosSensor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a3f48e38-8601-4d54-8ba7-09e22847cfa9"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DFtpServerDosSensor"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="947e8b99-ac96-47c7-9a67-2b37bfec4b15"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="53b6d076-971e-4742-a4de-77a08c7fe712">
+                <propertyInstance
+                  Id="ccd743ca-2a6c-4b09-927d-f7540bec8567"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="58dd183a-e1c5-4de7-9633-b6b946ef05a3">
+                <propertyInstance
+                  Id="fe0ad40e-e8a2-4fa8-a488-964d8e04f263"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d04822c2-7322-4d44-8026-05120a194802">
+                <propertyInstance
+                  Id="caed1fc7-33db-4a42-ae4d-f1852ca06e29"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="856cb4d3-c422-4796-8c37-47e21777b1d8">
+                <propertyInstance
+                  Id="630acb5e-cb47-4a0c-a10a-35334c60bf80"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7e6e29eb-6864-4eb8-94a0-60f1fae36337">
+                <propertyInstance
+                  Id="99f59520-99d3-4b06-bbc7-3fd393668388"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="97d04afb-f3a2-4845-82a5-8d79e7e7d953"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9efcaa3a-e8e1-41d7-bfc1-11a04bd8646d"
+              LastKnownName="BaseSensor"
+              LastKnownLocation="Package_1708.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b0d00eba-a59e-40d2-a05c-8c6209d24937"
+            name="FtpServerDosSensor"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="11ed109d-70e9-4f59-946b-27e949f60d22"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DFtpServerDosSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c2b75cd0-87e2-4157-96c6-8850f01f2127"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0947b96-d515-46ad-b42e-5f7b7bba8e64">
+                    <propertyInstance
+                      Id="715e8dde-e1fb-4db6-bc05-6435eeb2147f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f0555f1-cc87-4a64-87e9-15d228f94c66">
+                    <propertyInstance
+                      Id="1fd734e1-261e-4297-9306-48c374b4c63b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb60b1c6-a3c4-479a-9b5a-30f2cec6572d">
+                    <propertyInstance
+                      Id="5b78997c-a625-4ec3-8289-6ab3c56e56f1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c54c7e5-c34e-412c-8f4c-fb902521824c">
+                    <propertyInstance
+                      Id="ecd0b4c9-c8f0-49d0-98e1-992b5ed0d26c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a2dc66c-238f-43ec-a205-174c3f4a6e42">
+                    <propertyInstance
+                      Id="fc1fd8f6-4498-432f-ac4b-461dc45f8f22"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18cfa8ac-757f-48b4-b6f2-6fbd2bf62fab">
+                    <propertyInstance
+                      Id="92f4b8d1-8ef1-48ab-9211-b0c9916c165a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ba4a979f-5e6c-4e39-9051-bca98d5f0896"
+                  name="deviceToCaptureInfo"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bfa8019c-548a-4705-bcab-03b2dcd90d22"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DFtpServerDosSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DdeviceToCaptureInfo"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="354a353e-6856-44ea-b075-463819ce661e"
+                      LastKnownName="CaptureDeviceDescription"
+                      LastKnownLocation="Package1_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="99619604-c2a6-4eef-9177-747e61aed8e6"
+                  name="filter"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="dc80b6be-b0a3-45f7-b875-e418264707b7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DFtpServerDosSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dfilter"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="79aaac90-2672-4b72-a1c6-7b0fadcb11d7"
+                  name="deviceMode"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d083ebfd-40ed-41bb-bdc0-027a72f519a9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DFtpServerDosSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DdeviceMode"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="1273f744-5d38-497b-9e4a-99c3487918aa"
+                      LastKnownName="DeviceMode"
+                      LastKnownLocation="Package3_0855.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f5bef20e-d2e7-4b5c-b1dd-aa166dfd4f77"
+                  name="reportMethods"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b9147a8f-1914-4cfe-a652-211a6bee607a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DFtpServerDosSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DreportMethods"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="13ce9afd-6d06-4dc5-ab61-eccb7c619196"
+                      LastKnownName="List&lt;ISensorReport‎&gt;"
+                      LastKnownLocation="Package5_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f3086e2c-82a1-4eb9-8b40-0de205b43e4e"
+                  name="heartBeatDelay"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4f1820c8-76a1-40b0-b6c4-8d7b11a1700c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DFtpServerDosSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DheartBeatDelay"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b0729cf6-b9b4-4c10-a347-f48b5c8ff0ff"
+            name="FactoryMethod"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="911c5927-4f63-4eff-9115-c6b9f24968f8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DFtpServerDosSensor Member%3D(Name%3DFactoryMethod OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ae58653a-8ecb-4c58-a77a-917bfc085299"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad74754b-53d2-40dc-8e7d-000182916415">
+                    <propertyInstance
+                      Id="d003aeb7-0193-4bc6-9b05-6b18437cf63f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2696e0b3-20c0-4b86-a63e-70bc678f0d04">
+                    <propertyInstance
+                      Id="6ad1cd25-45e9-4fad-aab3-c2e87d1a1d08"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3412abc3-2e55-42d4-b3ac-5994a836701f">
+                    <propertyInstance
+                      Id="04b7d82d-1298-493b-afa2-b7cd26dd4ca7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b52e825e-cbb5-40da-bf9a-3d789f095356">
+                    <propertyInstance
+                      Id="1cd49ce4-e60b-45e7-8d31-d5ca10d28486"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae206cdc-dccf-401a-a0a3-7bde542af17a">
+                    <propertyInstance
+                      Id="9a5bb9a4-1066-4bde-87ac-e6220e22a230"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6acb43ab-03f8-42c3-a70a-8e6fa4b1a0b6">
+                    <propertyInstance
+                      Id="860090e8-2d93-46f2-a425-dacab482ea20"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b7314021-77e6-440c-af37-f3179927aeb8"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c56b2a95-04f9-4aa9-b091-d6ab7a7b8f2c"
+                      LastKnownName="FtpServerDosSensor"
+                      LastKnownLocation="Package_1708.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="12419b50-1e58-416a-8547-a79fd8e4ea3e"
+                  name="deviceToCaptureInfo"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8579927d-b1da-4452-b38d-b20c04fe00dd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DFtpServerDosSensor Member%3D(Name%3DFactoryMethod OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DdeviceToCaptureInfo"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="354a353e-6856-44ea-b075-463819ce661e"
+                      LastKnownName="CaptureDeviceDescription"
+                      LastKnownLocation="Package1_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9093dfe2-eb20-48a3-b59a-b8cf041f6883"
+                  name="webServerAdress"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f414aeb3-0f52-4f93-9f22-ef382d333584"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DFtpServerDosSensor Member%3D(Name%3DFactoryMethod OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DwebServerAdress"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c25016cd-2958-49c8-b0d5-247a540a6086"
+                  name="port"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6723f8fe-d7a0-4ef0-ad8c-3ed999aa3a6a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DFtpServerDosSensor Member%3D(Name%3DFactoryMethod OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dport"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1374aca2-f0cf-4326-87f9-0f621a243e7d"
+                  name="sensorDeployedOnWebServer"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d1a2bbcc-1106-4789-b496-a67d6ee0354f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DFtpServerDosSensor Member%3D(Name%3DFactoryMethod OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DsensorDeployedOnWebServer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="06a74bef-c8ea-484b-b3b5-2a7f34b3409b"
+                  name="reportMethods"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="dc99a3ef-a918-44c1-9444-518ffec5882c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DFtpServerDosSensor Member%3D(Name%3DFactoryMethod OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DreportMethods"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="13ce9afd-6d06-4dc5-ab61-eccb7c619196"
+                      LastKnownName="List&lt;ISensorReport‎&gt;"
+                      LastKnownLocation="Package5_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bac9380f-0d49-4e27-afdc-0c611a1da16c"
+                  name="heartBeatDelay"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5b1a3ac6-6a8f-4702-bc94-16ed6c791924"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DFtpServerDosSensor Member%3D(Name%3DFactoryMethod OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DheartBeatDelay"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d0e90d40-1464-442a-86e0-896969352874"
+        name="WebServerDosSensor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="9d54fa4c-b75e-48ab-94ec-779a0dd122bf"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DWebServerDosSensor"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e5a08de5-2dc1-4b34-9243-be158229d945"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fe4d248b-ec6b-41fd-b81c-fa9fd7e09ee2">
+                <propertyInstance
+                  Id="3cbe7086-4bee-4e03-a71f-f1ad41c8049c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="75fa0f2b-7d7e-4897-ae95-1248eda7cfbb">
+                <propertyInstance
+                  Id="4b590b09-99bf-4f51-9bcb-8d87f15a2635"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="863f7837-c80f-4620-9bb1-d0115920a332">
+                <propertyInstance
+                  Id="f0354fd0-d538-4d65-9ece-041245a4b127"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5bccf1e0-6f28-4320-8b89-598e6c970a7d">
+                <propertyInstance
+                  Id="5d474f79-397a-4f29-bdc8-68acb9a4de5b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6bf8515a-de04-4c07-bd5a-d2b4a46f8c3a">
+                <propertyInstance
+                  Id="c851d36d-c855-4460-b523-87eea8ffc495"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="4664641a-79a8-446d-a94c-fefd604bda65"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9efcaa3a-e8e1-41d7-bfc1-11a04bd8646d"
+              LastKnownName="BaseSensor"
+              LastKnownLocation="Package_1708.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1c755620-b614-4b82-8e2e-dc5d07b637a3"
+            name="WebServerDosSensor"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="215ff6a0-52eb-445c-b2ae-4601b518bbfc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DWebServerDosSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="645dafa7-614f-4aa8-8e05-bc4314452583"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fbc184b-2e46-45f9-8aba-216d9101d108">
+                    <propertyInstance
+                      Id="9dc68c9f-fde7-49f9-ac5d-7a467afe2c7b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d24a7e89-fbbf-4515-8a08-0f0eae41758d">
+                    <propertyInstance
+                      Id="66d31701-9251-48d2-8029-f430724018dc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d49112c5-dd83-4d7a-9b2c-15aa07aa9dd0">
+                    <propertyInstance
+                      Id="a20473e0-1db5-4232-80fd-d5e85c521b01"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8e6d2c8-37db-45e6-b6ed-0cb87a133822">
+                    <propertyInstance
+                      Id="645069fc-819f-426c-9e68-853dd9a17193"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92463a96-2d6f-40ee-8f62-9c92ea26b23e">
+                    <propertyInstance
+                      Id="e3fac1d0-55dd-4316-8c7f-af46f99c7630"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8937f388-0b4a-4ff0-9836-483a9a44f445">
+                    <propertyInstance
+                      Id="c0821876-84f0-4920-84eb-99801af56120"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="044aa029-793b-4b43-bf08-b02ffdd25639"
+                  name="deviceToCaptureInfo"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="db5f4020-383d-4bec-995b-aebc5ee3c080"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DWebServerDosSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DdeviceToCaptureInfo"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="354a353e-6856-44ea-b075-463819ce661e"
+                      LastKnownName="CaptureDeviceDescription"
+                      LastKnownLocation="Package1_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6bbda9e9-838a-436f-b208-6bb3297bcf78"
+                  name="filter"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="00e59600-6d44-499e-9a00-c349218fac6d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DWebServerDosSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dfilter"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e0852f61-a7f3-4183-ba42-2066eb7c16a8"
+                  name="deviceMode"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="210319b0-ce8d-4f75-a320-0667cdd79261"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DWebServerDosSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DdeviceMode"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="1273f744-5d38-497b-9e4a-99c3487918aa"
+                      LastKnownName="DeviceMode"
+                      LastKnownLocation="Package3_0855.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e668fa5b-ded5-49a9-b1ed-1fbe9c48e040"
+                  name="reportMethods"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="89eb5b1b-8fbe-47b8-a46a-427b6e063095"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DWebServerDosSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DreportMethods"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="13ce9afd-6d06-4dc5-ab61-eccb7c619196"
+                      LastKnownName="List&lt;ISensorReport‎&gt;"
+                      LastKnownLocation="Package5_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c62736f4-93df-4848-bc77-bb2a58b0daba"
+                  name="heartBeatDelay"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b1ab34f1-17d3-4f49-bfbf-13017f900d55"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DWebServerDosSensor Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FReferences%2FSharpPcap.dll&quot; Namespace%3DSharpPcap Type%3DDeviceMode)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DheartBeatDelay"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5b7e4f6c-97ea-4914-b418-991f6adde8bb"
+            name="FactoryMethod"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e3f3cc6b-150a-49d4-93ad-b6546d5da654"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DWebServerDosSensor Member%3D(Name%3DFactoryMethod OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6b9331f7-96d4-4f5a-ac02-ad93536b3b25"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2654c78b-27e2-48f1-934e-a9f7cf6c7dbb">
+                    <propertyInstance
+                      Id="16f01a0e-8d78-444e-a6a1-7f095dc60197"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b6c55f8-d52c-40b2-bfc4-ff60cf6ef960">
+                    <propertyInstance
+                      Id="d74c2e8a-05ed-4a4b-999c-1e537edb3166"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5dd123d-7ea6-4439-888a-f69bb91dde76">
+                    <propertyInstance
+                      Id="f6ee1dbf-a5db-4d62-8e5e-4010ef48273e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63d58071-c9ca-4a23-b991-a677212e5a36">
+                    <propertyInstance
+                      Id="11dc6a52-4649-4a5d-ba0e-4226bdb77d58"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15b5f9b3-8fb3-4b4f-881e-85d2b25c832e">
+                    <propertyInstance
+                      Id="6eb0556d-15cf-438b-b4b4-439ed6ca5916"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc6f90b8-74ac-45bc-a045-f65155437fac">
+                    <propertyInstance
+                      Id="77ce3d11-0f70-46a9-b346-5f815687f2ac"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b7ca23d3-f41f-4148-a0f1-055cef43eff4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d0e90d40-1464-442a-86e0-896969352874"
+                      LastKnownName="WebServerDosSensor"
+                      LastKnownLocation="Package_1708.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="21ba0a93-d60e-4185-9a17-a25c6c15a4c2"
+                  name="deviceToCaptureInfo"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0333a98a-d69f-40a4-856a-3b78606a51ce"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DWebServerDosSensor Member%3D(Name%3DFactoryMethod OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DdeviceToCaptureInfo"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="354a353e-6856-44ea-b075-463819ce661e"
+                      LastKnownName="CaptureDeviceDescription"
+                      LastKnownLocation="Package1_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="90bdb81e-b517-448e-9636-80f3992f0207"
+                  name="webServerAdress"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="694e0e98-9527-4d09-90bb-7658cdc5d049"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DWebServerDosSensor Member%3D(Name%3DFactoryMethod OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DwebServerAdress"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a9bbaa9c-3273-4241-98b4-3669c7a2bd30"
+                  name="port"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="910eb685-1047-4409-8d69-d4c121e771eb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DWebServerDosSensor Member%3D(Name%3DFactoryMethod OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dport"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1f0a13e0-fd81-478a-9e8b-d9dfd81525b6"
+                  name="sensorDeployedOnWebServer"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="809fcdd0-33d6-4e88-bec5-712f570223d0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DWebServerDosSensor Member%3D(Name%3DFactoryMethod OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DsensorDeployedOnWebServer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5fd1e60d-6dff-4b51-8a4d-7199a01c9d09"
+                  name="reportMethods"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="99709756-a565-4587-b9ab-6c84230e6e1e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DWebServerDosSensor Member%3D(Name%3DFactoryMethod OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DreportMethods"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="13ce9afd-6d06-4dc5-ab61-eccb7c619196"
+                      LastKnownName="List&lt;ISensorReport‎&gt;"
+                      LastKnownLocation="Package5_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ac0d52f9-f354-47d3-ab7f-a5e2dd714590"
+                  name="heartBeatDelay"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fa146da9-99ab-4cf4-9d71-5d2a1e3fe1bd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Sensors Type%3DWebServerDosSensor Member%3D(Name%3DFactoryMethod OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DISensorReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DheartBeatDelay"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

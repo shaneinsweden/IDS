@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="2eb3f628-c2f3-4c4a-8539-375f968ce938" name="IdsComponents" linkedPackageId="b5631071-331b-4975-973c-cdc49378eb2b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="9fe977a8-d878-46ac-8fa7-8bec6e815700">
+      <profileInstance Id="5f1ffc0a-0190-4c73-b1b9-d00814b82e03" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="d9e75068-7986-45fe-983c-6a7f7d56e885">
+      <profileInstance Id="5d6892a0-13be-4185-8296-c078801cb51c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e3c821b3-e24e-4ae8-896c-57c17ff9ec43">
+      <profileInstance Id="22567928-68b7-4b54-bfe6-cd4d653947e8" name="CSharpProfile">
+        <elementDefinition Id="32fcf95b-1413-406b-8d1b-acb80bd3cce0" />
+      </profileInstance>
+      <elementDefinition Id="0782e2eb-a677-4364-83df-73e8b9975cca" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <package Id="b5631071-331b-4975-973c-cdc49378eb2b" name="IdsModels">
+    <elementDefinition Id="ff2170cc-6601-4696-9247-bee1ec8faa4a" />
+  </package>
+</componentModel>

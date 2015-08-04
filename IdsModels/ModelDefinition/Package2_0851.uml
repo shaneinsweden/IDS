@@ -1,0 +1,1863 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="8d08fc78-d0df-44e5-9514-d4156705dbf7"
+  name="Analysers"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="521008ea-0397-4c9c-aa97-26461487d069"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DIds.Common.Analysers"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="661a0d5b-26e5-4016-8140-4f161dfaa8af"
+        name="BaseAnalyser"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="11cd8561-8d97-446a-a732-14014a54fbfa"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DBaseAnalyser"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c83aa22d-2bde-4387-831f-f9ca94314034"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1e80b20c-1d0f-4904-9957-e2c17d7ea9ac">
+                <propertyInstance
+                  Id="eb2220da-96fc-4e81-851e-312beb00b313"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4a325e74-c875-43ac-8a09-5180c0769af8">
+                <propertyInstance
+                  Id="f5a1d379-1b53-4863-997f-2997c238381d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="07c6e5c6-9d4e-4489-9594-99fd7f13ea58">
+                <propertyInstance
+                  Id="57992b69-9e89-42fb-88af-c0468664a306"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="873950e6-cdfc-4960-815b-5c963062b5f2">
+                <propertyInstance
+                  Id="35ae2efd-99e2-44df-94e6-6160e659ac89"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cec21d9d-0547-4b93-bbe4-f0e4702272ad">
+                <propertyInstance
+                  Id="da21aff0-269b-4e09-8f78-1b7e496a1b46"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="a13bf91c-6c2a-4e4c-942c-36f6329f212e"
+            name="ReportMethods"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="48d6bd86-aec9-40fc-ac71-aa5ce123d8b6"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DBaseAnalyser Member%3DReportMethods"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="55c5702e-776c-482c-bb57-a0b50c5fa300"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="307b7265-05a5-47d6-b0c6-6ef228d87cbe">
+                    <propertyInstance
+                      Id="1f7cb257-de75-426b-90da-4d3bffb6728e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="987b63c6-bcfd-42ba-b6e3-dd3c888cfd1b">
+                    <propertyInstance
+                      Id="e695cd61-33d1-4874-a3aa-bb06ec77055c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="895f8761-7321-4fbf-a686-1f97db671a3d">
+                    <propertyInstance
+                      Id="7de4df2f-636d-4ee1-9d72-8e6386aa3fdd"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5bf4656f-f82d-4825-8404-8f3e34a28ef0">
+                    <propertyInstance
+                      Id="fd92ef7d-d4cf-408a-8f82-61fda2be8220"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ecb0114a-03a3-4176-897e-ab34ccf21930">
+                    <propertyInstance
+                      Id="4c138588-ee15-44b1-ab64-40b53fd3d715"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="987b6d86-321c-47ff-bc7c-5de03829745a"
+                LastKnownName="List&lt;IAlertReport‎&gt;"
+                LastKnownLocation="Package5_0851.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f3c10654-9fb0-4455-a551-12bd7f5ad8c5"
+            name="SensorEventAgent"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3baa7d87-55fc-4158-a82a-f5b1d76733ed"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DBaseAnalyser Member%3DSensorEventAgent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d7bfd14f-eacf-4bf0-8525-cfa71563b2f9"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b5c3003-6235-4053-8028-3dc775b84f72">
+                    <propertyInstance
+                      Id="30833cff-b326-4f9b-9295-d1d0f58fa4ce"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93c84b67-9359-4ecd-8750-51983c6febcb">
+                    <propertyInstance
+                      Id="617d0229-4637-4ea3-9bca-22761323f8a9"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b78974c5-b310-414b-88b6-e66cd9ec3340">
+                    <propertyInstance
+                      Id="8e76e6ea-54a7-4de5-980a-54b73b3e35de"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29c2419a-53cf-4d5d-bdef-8e4e1ec56cc8">
+                    <propertyInstance
+                      Id="ff56e01f-cd28-4bcb-99bd-9cab0e6c59c2"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a19594ba-9bef-49ba-b7b0-41eaf8c4a31b">
+                    <propertyInstance
+                      Id="bf46dcba-36f5-42ef-ac2b-3ffdfc6ab758"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="994ac403-086f-4bc7-8de6-afb14c1d7b24"
+                LastKnownName="ISensorEventAgent"
+                LastKnownLocation="Package_1723.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="48d7f8ca-d60e-4c30-b090-1f1bbfc0701d"
+            name="_analyserId"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6a8f5252-3da2-4d4c-be33-d03a9374bb33"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DBaseAnalyser Member%3D_analyserId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e06f6fc5-b38c-42fa-89d1-1a46fe0e01e8"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2eeaad7-62c3-45e4-baa5-b72db612c41a">
+                    <propertyInstance
+                      Id="553b4104-3280-40a7-8678-57581c1efc16"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f1a00d3-101d-447a-863c-06a808a72b3b">
+                    <propertyInstance
+                      Id="e10bdb38-d6a4-4265-870b-2286eea3031d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd0c72dc-ae24-49ed-8312-3ec9930c79a1">
+                    <propertyInstance
+                      Id="787d48a3-df83-403c-a593-802ead640275"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f73d835-4832-442c-9790-3f83e7a96a93">
+                    <propertyInstance
+                      Id="50056480-c842-4a42-9518-eed121ea6110"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2973a2e-d56c-4a93-a93c-f40b6ee10d01">
+                    <propertyInstance
+                      Id="3963a3ee-e904-4f37-adb1-4da0d7d3aa30"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="d21b2c18-62c3-4338-8bc9-2005994c44b9"
+                LastKnownName="Guid"
+                LastKnownLocation="Package3_0851.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ab640c1f-64e5-4a1a-aaea-ccdb4523accf"
+            name="BaseAnalyser"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="52b66779-5e0b-4ae0-9edc-a0ac592191df"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DBaseAnalyser Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DIAlertReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FCommon.Data%2Fbin%2FDebug%2FIds.Common.Data.dll&quot; Namespace%3DIds.Common.Data.Interfaces Type%3DISensorEventAgent)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a883c863-8cd7-48f8-888b-c6b969a3422b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ad9cbe7-63cf-40f7-af49-1c603be5bbb9">
+                    <propertyInstance
+                      Id="91c0f93e-b4cd-4ba9-8a73-52596997671a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="006c19ee-f426-42bc-b47a-29e86f0bb1ba">
+                    <propertyInstance
+                      Id="fcaaeead-9a04-454e-9c2a-5b0366f081df"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab106ace-b667-4a85-8c91-38f05bef8452">
+                    <propertyInstance
+                      Id="c3d1f8ee-6a79-46cc-b777-629a77a17ae9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="989fb611-ac39-49f9-bbbb-14cd40de8638">
+                    <propertyInstance
+                      Id="11254ea3-1540-405a-9ddc-0e413cc86396"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b0dd881-2487-4112-be19-aca34b3d5da9">
+                    <propertyInstance
+                      Id="42d635d6-8d6a-44ff-ba38-62d35c8a6cc2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c25af96d-745a-4fb9-b276-8710260eb187">
+                    <propertyInstance
+                      Id="1e059880-a6ee-479f-8c6a-2287c71deae4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="90b5bc8b-869f-441d-94be-3791220f9941"
+                  name="reportMethods"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="812819d2-7576-408e-b163-3354defa95a7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DBaseAnalyser Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DIAlertReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FCommon.Data%2Fbin%2FDebug%2FIds.Common.Data.dll&quot; Namespace%3DIds.Common.Data.Interfaces Type%3DISensorEventAgent)]) ParameterIdentifier%3DreportMethods"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="987b6d86-321c-47ff-bc7c-5de03829745a"
+                      LastKnownName="List&lt;IAlertReport‎&gt;"
+                      LastKnownLocation="Package5_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4f9a7e20-59a5-4cc3-a455-acd667afc329"
+                  name="heartBeatDelay"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ecbd8d96-e193-47dc-a47c-c76fd00520c1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DBaseAnalyser Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DIAlertReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FCommon.Data%2Fbin%2FDebug%2FIds.Common.Data.dll&quot; Namespace%3DIds.Common.Data.Interfaces Type%3DISensorEventAgent)]) ParameterIdentifier%3DheartBeatDelay"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="52cb2369-79cc-4176-afe2-39f0101f8756"
+                  name="sensorEventAgent"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a8905d7a-40e3-4c4e-b8b5-eb757fa4ee95"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DBaseAnalyser Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Interfaces Type%3DIAlertReport)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FCommon.Data%2Fbin%2FDebug%2FIds.Common.Data.dll&quot; Namespace%3DIds.Common.Data.Interfaces Type%3DISensorEventAgent)]) ParameterIdentifier%3DsensorEventAgent"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="994ac403-086f-4bc7-8de6-afb14c1d7b24"
+                      LastKnownName="ISensorEventAgent"
+                      LastKnownLocation="Package_1723.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0f2adb89-a6a8-40f4-8733-9051387940cd"
+            name="BaseAnalyser"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="cb1724b6-b2a7-4204-8621-cb3e5db22c41"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DBaseAnalyser Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a05c8356-80c8-41ec-98c5-d678cbdaa204"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e0d929ce-e8ef-457f-8f2e-8e2cda8c6a7f">
+                    <propertyInstance
+                      Id="f2c7e1c9-91ec-4667-97b9-4084039af875"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aaa1c8d7-feeb-4e47-aa0d-23c41383f9e3">
+                    <propertyInstance
+                      Id="fc280e86-edac-46fb-b20b-40a422e5afb0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11aa25cb-0e3e-4ad7-b7fc-23e6568026cd">
+                    <propertyInstance
+                      Id="472f675d-6735-49f5-a211-efd5473cd086"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee97bc12-8658-412c-bfad-8701bd3abf01">
+                    <propertyInstance
+                      Id="922c2997-7ac1-475f-b874-8af48e4163e9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4b024f8-134b-461e-9f7c-95aedc43f7d0">
+                    <propertyInstance
+                      Id="7871cd19-b134-4890-ba85-cfb9d027d553"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c1d35c0-3663-4a19-a2cf-a5358304b816">
+                    <propertyInstance
+                      Id="90289106-aa06-4d33-b264-3f372aa5c641"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="374ebff5-5bf5-423b-9fdf-acf49ad18c07"
+        name="SimpleAdminLoginAnalyser"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="bf78af98-c45e-4c3d-8549-07231dd1eeb9"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimpleAdminLoginAnalyser"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3ab21c10-c44c-4eb2-bb88-3adbffb4d552"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f4b747a7-83ad-41a8-ac1d-345f1b2df08a">
+                <propertyInstance
+                  Id="2713f2f4-d009-4615-a6ba-b4577e4d39ef"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="15218a6f-4658-42c7-a08e-7236215d3c54">
+                <propertyInstance
+                  Id="11683619-b2f9-4a1d-af9b-24e6d3a61634"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e66c318c-1c93-4826-998d-b640d9e61ee7">
+                <propertyInstance
+                  Id="20f83da6-00af-4a69-94e5-efb6ece3a3a5"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c7855031-126e-4281-bed3-df97dcd5396d">
+                <propertyInstance
+                  Id="65299249-f0a1-4121-ac08-9eacadea7ce6"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="38c9379c-d8ac-4f26-ae8e-d7669f78a279">
+                <propertyInstance
+                  Id="02c5e3ce-1757-429b-91d1-1f14dd0735ee"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="71ec4b87-825a-4bb7-a954-96a17839cbcc"
+            isSubstitutable="false">
+            <classMoniker
+              Id="661a0d5b-26e5-4016-8140-4f161dfaa8af"
+              LastKnownName="BaseAnalyser"
+              LastKnownLocation="Package2_0851.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="947215d4-2667-459a-8d20-6caa25ed1354"
+            name="CheckForTextSignifyingAttack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6aa13b2d-f0d9-4d7c-8597-e474bd8aae2e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimpleAdminLoginAnalyser Member%3D(Name%3DCheckForTextSignifyingAttack OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9c8a3ef3-3d8c-4ab3-89e2-13880f0f5fb1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3ab25c4-84a4-434e-bd62-d261d6746d11">
+                    <propertyInstance
+                      Id="0b44ed54-3030-45dd-81fc-e25297e94518"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="255855bf-5c7a-43d3-9e38-fd3fcd496bd1">
+                    <propertyInstance
+                      Id="8f12e6a2-cdcd-4e0a-92ab-2019abf4ceec"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21fb246b-8c71-4d8a-8a93-e22bc75b1f65">
+                    <propertyInstance
+                      Id="d9c98869-f0a4-4353-be43-e2f1ab89a32f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ab59d6c-d810-40f7-ab95-a067059562d0">
+                    <propertyInstance
+                      Id="1676f1b4-5132-47cd-ace7-53f5bfccd1cc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43817e4f-4e3f-490b-bde2-36a1dcfd23c4">
+                    <propertyInstance
+                      Id="414969d9-c67b-47f8-b7b9-e6b39edc4396"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="408fff03-ae54-4d3b-ae31-139302b82aff">
+                    <propertyInstance
+                      Id="e6a114ad-853d-435e-92a8-38266757ba9a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6d9a912d-7eb5-4114-b8c5-e801a60ff701"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2876f9a1-5046-413e-99c9-b7fcb0d8e08f"
+                  name="searchTerms"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="76c0892b-a271-45f5-b340-02ebd78a1916"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimpleAdminLoginAnalyser Member%3D(Name%3DCheckForTextSignifyingAttack OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))]) ParameterIdentifier%3DsearchTerms"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ac5e8539-900e-43a1-896a-c7640bc8c108"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="83c5434c-350a-44cd-918d-d7ecd5908c20"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="841a5ed6-b25f-448c-af0a-99da44fc39cc"
+            name="SimpleAdminLoginAnalyser"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e4eb67cc-a0cb-47f6-8f4e-ec87cbba9cb7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimpleAdminLoginAnalyser Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b2b376c1-75f9-4383-b475-cbd12d190b54"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3292893-f3b6-4b2d-9c35-d93d91219ef6">
+                    <propertyInstance
+                      Id="65134383-5732-4fde-a1a0-b0d9cbdffa1b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37ce9800-49e3-43f9-b1af-7c1e12b6e9cd">
+                    <propertyInstance
+                      Id="6e8e411c-61ac-497b-9743-f677458d9d2d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87c138ab-552f-43cd-a073-dafe41320917">
+                    <propertyInstance
+                      Id="8517490b-3ccb-427d-b4c3-f2b4a045a245"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b007b5a-b5cd-4502-b8b4-c35a03e3ebfb">
+                    <propertyInstance
+                      Id="2cff361d-cf3b-4440-bb2e-6a281dbc7eeb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9cb67af3-6fc9-4441-be30-e3eedc448eab">
+                    <propertyInstance
+                      Id="bc267ebd-0215-4c69-b4f2-85268f8fe741"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f087eb1e-6954-4bd4-aa6b-c98c904a3dbc">
+                    <propertyInstance
+                      Id="473ed334-e8d2-47f7-8315-fde21c1aa9bb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bd3c0f91-9f8c-491b-ac8c-8a47c3a1cbfa"
+        name="SimpleFtpAttackAnalyser"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c0e36dc2-57bf-4da7-b82b-7f5a21701128"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimpleFtpAttackAnalyser"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a9b95c6e-a98c-48ca-a8e8-92e43a16df30"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="53b402be-fd84-4dbc-890e-b83f4b2bbab8">
+                <propertyInstance
+                  Id="3588d730-ff0f-47c0-a1ce-e18a5d815b88"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1e9bfce6-7226-4c00-ad32-b8b1bd1e15c5">
+                <propertyInstance
+                  Id="4308e062-8b7b-4742-b427-161067f040af"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="62303bdd-10a8-4e21-b7c6-70516beb9b94">
+                <propertyInstance
+                  Id="5471b579-ba87-4c6c-9df7-4850271b5e6d"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3f3a7852-35e4-4c3f-b7b2-082d179c23a6">
+                <propertyInstance
+                  Id="97bb4c08-4710-4b89-a110-489365c05c34"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3ca1367c-d5ca-47a8-862b-d69684eb59af">
+                <propertyInstance
+                  Id="b2f842d0-c368-4f3a-814d-0c3bebf56e8e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="8594caf1-8f99-4290-8094-a12756ec5a49">
+            <interfaceMoniker
+              Id="e5f813ea-a3c1-45b3-9f82-c68de9e19a34"
+              LastKnownName="IWebDosAnalysis"
+              LastKnownLocation="Package6_0851.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="27f01488-2717-4d03-9e10-c265473fa7a7"
+            isSubstitutable="false">
+            <classMoniker
+              Id="661a0d5b-26e5-4016-8140-4f161dfaa8af"
+              LastKnownName="BaseAnalyser"
+              LastKnownLocation="Package2_0851.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f31aead5-5a57-4d82-a4ef-8a3d51b60f4c"
+            name="CheckForWebServerDosAttack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="98601222-dd06-4ba0-b99b-242e8a132aa5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimpleFtpAttackAnalyser Member%3D(Name%3DCheckForWebServerDosAttack OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3f312048-00be-42ba-80bd-0fe18b57ffbb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="290c1102-d5a7-428c-af79-90be3133a0bd">
+                    <propertyInstance
+                      Id="d6e5f230-7e2a-4b4a-8d9b-098015f33700"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bfe4011e-9d99-4053-8db4-4a03019b06dd">
+                    <propertyInstance
+                      Id="3f353fca-41d2-4e69-9d83-85707f29ca4f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="866ff359-c6ca-4b9a-a565-60da6088b595">
+                    <propertyInstance
+                      Id="3d7ec234-8016-4086-88bc-59299af4cd5a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b7f8663-b9e9-499e-b656-ef586bd35acb">
+                    <propertyInstance
+                      Id="22b277b4-0f8b-452a-84dd-0d4c131e7426"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="acc64a4e-6fcf-47d4-8e89-05a17d10f0c8">
+                    <propertyInstance
+                      Id="d9adc270-a279-4465-b709-b23fa2099675"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c66afd89-cd81-4a67-8012-dd2745ba468a">
+                    <propertyInstance
+                      Id="7b806349-75db-46b3-9073-d1e8ef87c0e5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="03f2cb80-2218-4bdc-8f49-8be692941943"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5d4accb1-7908-4479-bc36-b86c7cff9a87"
+                  name="webServerAddress"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9e714fd8-2a97-4611-91d7-2f131cce8653"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimpleFtpAttackAnalyser Member%3D(Name%3DCheckForWebServerDosAttack OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DwebServerAddress"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f5443822-b072-43c5-b8a7-0df2a1b3712c"
+                  name="threshold"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3f5570f1-da55-4f54-be10-e1a76eb24452"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimpleFtpAttackAnalyser Member%3D(Name%3DCheckForWebServerDosAttack OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dthreshold"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="eee3e18e-f18b-4324-800d-aef5fb30b208"
+                  name="analysisWindow"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="18a2f77f-8cfd-4b00-a2a3-018b6f49578f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimpleFtpAttackAnalyser Member%3D(Name%3DCheckForWebServerDosAttack OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DanalysisWindow"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bd688a08-078f-4279-9403-b2aafcf5b378"
+            name="SimpleFtpAttackAnalyser"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4768f825-ea9b-4075-a5f2-62d0fda338f1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimpleFtpAttackAnalyser Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="529c04dc-74f7-4511-ae1b-7ef34be77f2b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1060d0fc-79c0-441f-9436-d62541786d70">
+                    <propertyInstance
+                      Id="fb71ed6a-b06a-4e50-a614-fe0f821ac7d5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd681bc4-f7c6-42ba-ab6b-6ab593bce082">
+                    <propertyInstance
+                      Id="cd4243a5-9c56-451e-aeae-18a27ca00778"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96295455-7a6c-40d1-829b-034fc9730b65">
+                    <propertyInstance
+                      Id="e926fe92-7f1c-4b32-88c6-d9a5df41771e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f656b25-fc04-4f64-81f5-8d50f5b13aa4">
+                    <propertyInstance
+                      Id="327e15df-79c0-48d2-9267-134243eec603"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80207e38-d83f-42e7-a9d1-37a2f35f89de">
+                    <propertyInstance
+                      Id="a6338b20-646a-4c19-93fe-53970f4c5e5b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8614594-ad0a-4b82-adc2-c4c7d164db5c">
+                    <propertyInstance
+                      Id="bd094428-7667-44bb-b982-d96f6c4e004e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="abe087e8-7355-46db-9157-661f21ccbe84"
+            name="CheckForWebServerDosAttack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bf6765ce-824a-41af-b84c-87e65f9265ef"
+                  name="webServerAddress"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="07266791-2c27-4f35-95f4-3bb131b325b0"
+                  name="threshold"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="81af88fe-c453-4609-bb48-78e62a78362c"
+                  name="analysisWindow"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f03c4582-a8fc-494d-ad2a-2fda5587f507"
+                      LastKnownName="Nullable&lt;Int32‎&gt;"
+                      LastKnownLocation="Package3_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a71a098b-ebb1-4102-8913-0ff8863a02cd"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="04650199-f389-4c48-9109-27299b17dd50"
+        name="SimplePortScanAnalyser"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="7aec3047-6749-40fa-8f9c-601623ed1597"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimplePortScanAnalyser"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a087682b-e2e1-42e4-ab5b-0b9121a18b2c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eff95d27-0c39-4a81-ae33-1accdbb73e2d">
+                <propertyInstance
+                  Id="fad76380-a713-47f1-aa2e-9674d8af70f0"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b36b2fd4-7d8e-491e-a26d-0a90e88a0437">
+                <propertyInstance
+                  Id="c5e145b1-bd97-4b5b-acd0-297459d02e17"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d38e731d-e55b-4e91-9b54-bf7b5383b4a7">
+                <propertyInstance
+                  Id="57f68c85-a117-4830-83a0-2ca5e16e687b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2851b173-5181-4e7b-87c4-c22c6479729d">
+                <propertyInstance
+                  Id="ee64cbd2-834f-467c-91ff-c5e823ca6574"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c689a821-0466-47c9-9187-c8c0e289ae4c">
+                <propertyInstance
+                  Id="09f0e436-0f65-447b-93d5-a5639847b1e8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="663e2c63-8052-4464-99c0-9789a0119ea3">
+            <interfaceMoniker
+              Id="a08e9170-2308-47df-b352-b65bebcd28ec"
+              LastKnownName="IHostScanAnalysis"
+              LastKnownLocation="Package6_0851.uml" />
+          </interfaceRealization>
+          <interfaceRealization
+            Id="25dde6cb-758b-4392-98ed-c0c6ee6f9244">
+            <interfaceMoniker
+              Id="208a96af-eb0f-43c0-a73f-a74929928dc1"
+              LastKnownName="IPortScanAnalysis"
+              LastKnownLocation="Package6_0851.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="484a10ba-f2f8-4cb3-9aa3-cb83a2ba0f3b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="661a0d5b-26e5-4016-8140-4f161dfaa8af"
+              LastKnownName="BaseAnalyser"
+              LastKnownLocation="Package2_0851.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c2b4dfb2-8ebd-45d9-ae53-3b5e90bbfbc9"
+            name="CheckForHorizontalScan"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c7252534-3ad7-49a1-a207-4a88f41f4ddb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimplePortScanAnalyser Member%3D(Name%3DCheckForHorizontalScan OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="54112e97-23e5-410f-a00d-a621b23ed792"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e6b69a2-a2ad-4af7-a2a2-7f999958bdf1">
+                    <propertyInstance
+                      Id="706010af-e488-4d7e-aa68-29280c626356"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77aef793-b4e9-45be-a87f-228fc2061909">
+                    <propertyInstance
+                      Id="b81e6442-f752-43ef-9e83-ce2bd270db97"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="443d4485-a50d-4d37-8f54-c0be4a05a309">
+                    <propertyInstance
+                      Id="79e151dc-dbab-472f-ab4d-df65d047d909"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9691b256-ee24-4310-bd74-6e02dabe23a6">
+                    <propertyInstance
+                      Id="f0e1b273-2a0e-4d28-bc2a-57cb2b15912a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="daba716a-ff89-4dad-99dc-f9b947c8ccb7">
+                    <propertyInstance
+                      Id="8ed385fe-f50f-41f0-9873-51afcb8e9d58"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ff36950-5d61-404d-a055-c2aeede9715d">
+                    <propertyInstance
+                      Id="a9137359-dfcc-4a0b-8409-f3b467003c14"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d77d47dc-15fd-417e-988e-0d4f20022e83"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="30852047-1d5b-4065-bdb6-f21b24e3bbc9"
+                  name="connectionString"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e5416732-87e0-4fcf-8e05-67e89bb9987f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimplePortScanAnalyser Member%3D(Name%3DCheckForHorizontalScan OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DconnectionString"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d97121ce-0ff9-4993-895f-08e2b19593a4"
+                  name="threshold"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="06f5b8f5-f868-438d-8858-d27f020b529e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimplePortScanAnalyser Member%3D(Name%3DCheckForHorizontalScan OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dthreshold"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="aff1c758-5aa9-4e27-9237-b77b8cd5b781"
+                  name="analysisWindow"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="444eb8db-d1b8-4092-82d1-9623990ec710"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimplePortScanAnalyser Member%3D(Name%3DCheckForHorizontalScan OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DanalysisWindow"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f56848d2-28cc-414f-b430-f2e88268cba8"
+            name="CheckForVerticalScan"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2b86ad73-523e-4d7f-8fcb-50db4dcf1f95"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimplePortScanAnalyser Member%3D(Name%3DCheckForVerticalScan OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ea10cbe8-6888-4e0e-b892-b31f31ab3a53"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fcb88e2e-33d7-4fa9-a5c0-6a84326de8a5">
+                    <propertyInstance
+                      Id="329993f9-93f2-4edb-bcf7-dde6e5afd313"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="126c9795-159a-4174-96af-ec451f9ca0a3">
+                    <propertyInstance
+                      Id="74c29063-885b-4dab-b5b4-e3db0343cd63"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b831244-88cf-4315-b7e8-227c1b805fcd">
+                    <propertyInstance
+                      Id="2f1c0f8f-e034-4cb8-b3a9-9364e91eb82d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d56e36cd-79ca-4beb-9d18-834729244fcf">
+                    <propertyInstance
+                      Id="505eac52-863f-4d92-ba23-4d3c1ad26d75"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dbb60d93-0a5d-4260-8b1c-cf296b1a0d54">
+                    <propertyInstance
+                      Id="90b2e95a-25fe-4353-8b4f-625602e7b9ab"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de58c09c-8b27-4cb4-877a-5af8d81f7db1">
+                    <propertyInstance
+                      Id="90c3bdc9-ff36-46b8-947a-09a364b5703b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="45107725-0e82-4d13-9a37-e80d5c793740"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="000fe6ee-60bf-4dcf-a984-7eb47094d402"
+                  name="threshold"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="83a9ce8d-de48-4841-bf39-f3b36099c1ee"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimplePortScanAnalyser Member%3D(Name%3DCheckForVerticalScan OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dthreshold"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e6e202f7-9f81-4b88-9975-365499a884b5"
+                  name="analysisWindow"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bf9ba2ff-a551-4b5b-b7ac-2666060a887d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimplePortScanAnalyser Member%3D(Name%3DCheckForVerticalScan OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DanalysisWindow"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cda979e6-4537-4dda-933c-3ddb396d168e"
+            name="SimplePortScanAnalyser"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a02016bd-5b1b-449d-9918-579f25bf906f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimplePortScanAnalyser Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a056d074-514b-4019-8663-cc5d75eeb3f3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f8ca0e1-5715-4157-98d8-8c7a6c34374d">
+                    <propertyInstance
+                      Id="e25bbadb-35e5-4ad9-ab8c-3746a3fcfcdd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fd224fb-98ff-4550-b0f3-00e1ae74723c">
+                    <propertyInstance
+                      Id="323094ff-c115-4405-810e-f3ff0bb7c343"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ef1b545-7756-436f-afb4-f09c7738eef1">
+                    <propertyInstance
+                      Id="df741d90-0c6e-4fbe-8d58-e2eb7ad5e6ff"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa0fbf5c-c8b2-4638-8fbe-11aa1069db1d">
+                    <propertyInstance
+                      Id="8fce22af-4be1-46e1-b98a-e69d31a36846"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1eb42bf-b952-4e38-a67e-da6ea0ea9375">
+                    <propertyInstance
+                      Id="cd7c0a23-40f7-4700-bf21-ae408ebcb69f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9792cb53-2a77-42a2-ab9b-7ce9a50677df">
+                    <propertyInstance
+                      Id="de73c8e9-fae4-4947-a898-2d5cfdb20033"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="9c203af9-f336-4cca-90d3-9c17ff8d0627"
+            name="CheckForHorizontalScan"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="11cdb19d-dc5b-4659-bea4-0f4c78218295"
+                  name="connectionString"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0d0a3067-8956-419e-a49a-7d3eba12ba81"
+                  name="threshold"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1d34dfbf-bb65-42e1-bd85-9f0da6a51f57"
+                  name="analysisWindow"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f03c4582-a8fc-494d-ad2a-2fda5587f507"
+                      LastKnownName="Nullable&lt;Int32‎&gt;"
+                      LastKnownLocation="Package3_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5ff92d85-9218-45a3-b2fa-9caa739273b3"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3a05754d-47fa-46da-9ebc-ecda726460a0"
+        name="SimpleWebDosAnalyzer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f1ca1420-711a-42a2-aa8d-efe89561aea0"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimpleWebDosAnalyzer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5680119b-89f5-465c-8728-a3c2d34bb827"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ce6ef41f-7ee5-46d3-9359-cc1103f06cb2">
+                <propertyInstance
+                  Id="1eadb1f1-9536-4142-850c-bef8c219b2cd"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="13d152d5-52bd-49af-ab30-c6f121bbc303">
+                <propertyInstance
+                  Id="53658b15-6c67-4298-8dc4-f002eb31f5ec"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c87c49a0-cdae-449d-a145-8d94e0ea8c0c">
+                <propertyInstance
+                  Id="2e519a9a-69a3-4284-ae7b-54323aa17aa5"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fb73d968-bcc1-4d09-acd9-791400ed75f8">
+                <propertyInstance
+                  Id="988fcaa2-ad5f-4bcf-b8ba-a4f402e0ae7c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9352f835-f833-41cd-b554-d4b549017b84">
+                <propertyInstance
+                  Id="f722ddac-ff0c-42a6-8a28-d36617426127"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="934c0afb-2443-4f7e-b4b7-a5533abb0d7e">
+            <interfaceMoniker
+              Id="e5f813ea-a3c1-45b3-9f82-c68de9e19a34"
+              LastKnownName="IWebDosAnalysis"
+              LastKnownLocation="Package6_0851.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="18b93546-1430-4b9b-b3ef-43c67de057fa"
+            isSubstitutable="false">
+            <classMoniker
+              Id="661a0d5b-26e5-4016-8140-4f161dfaa8af"
+              LastKnownName="BaseAnalyser"
+              LastKnownLocation="Package2_0851.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5d685710-3241-47c8-b49f-3128a1758d94"
+            name="CheckForWebServerDosAttack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e0327352-2d61-4861-8c37-316bcd1bf421"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimpleWebDosAnalyzer Member%3D(Name%3DCheckForWebServerDosAttack OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="74ea3088-344f-42a8-944f-83b5cfefdbfd"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c781b2c3-8619-4c70-a095-1f34f952b7f1">
+                    <propertyInstance
+                      Id="2511a27c-823c-4140-9e3f-51b433981bd1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05a23ae3-792d-40c6-b892-1db4eadba7a3">
+                    <propertyInstance
+                      Id="0a7280ce-5da8-45d7-876a-29550adaac68"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="14e0a0ec-2c72-4e5b-99ca-aa45a73c1f9b">
+                    <propertyInstance
+                      Id="a76f4d7b-a919-4dc1-8f2b-6a32b9b62b4e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="146705e1-4cca-4a6d-9fec-a26717237d04">
+                    <propertyInstance
+                      Id="84613fe2-9e2b-42ac-9a1f-e24cea0d0241"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e06801d-7d1d-4bee-a9ef-7f7e1b7086cf">
+                    <propertyInstance
+                      Id="a5f27ecc-f603-4a9d-b4b4-1080fae813c7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="576b0740-a9ad-4ed1-b4ba-e1aeb01bc3b7">
+                    <propertyInstance
+                      Id="3a5616d0-d261-4689-b1cc-b35be26fd2f8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4e16b6fd-66eb-44ef-a766-ef0276916fcc"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="90873db9-8010-429b-99e0-7b4570135f6d"
+                  name="webServerAddress"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d951c02c-879c-43b2-870f-4431f5149b0a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimpleWebDosAnalyzer Member%3D(Name%3DCheckForWebServerDosAttack OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DwebServerAddress"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="88e91661-2d77-4f75-95d6-a9ea93a72eb8"
+                  name="threshold"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4fdf71ee-8ad7-4d92-a86f-5c45a7cd85a6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimpleWebDosAnalyzer Member%3D(Name%3DCheckForWebServerDosAttack OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dthreshold"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="92fd7824-a503-4225-8540-24cf6b16ac61"
+                  name="analysisWindow"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4fbceff6-4308-4adf-b469-77fc0c457554"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimpleWebDosAnalyzer Member%3D(Name%3DCheckForWebServerDosAttack OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DanalysisWindow"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fd357743-068f-47d6-a968-a305eaf156cf"
+            name="SimpleWebDosAnalyzer"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="093c83d3-33d2-41f5-8819-8a9f9fa7fd53"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common.Analysers Type%3DSimpleWebDosAnalyzer Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="abc2cdaa-b089-43da-8967-7daec646c4d4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17e1d44e-6baf-4f78-8fe0-ee3d5fa17132">
+                    <propertyInstance
+                      Id="4ac7d3c5-f9b4-4000-850c-bf95ddc2cc75"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50f2723f-ea92-471f-8712-a6b94b0076a9">
+                    <propertyInstance
+                      Id="768eca55-13c8-4ad9-9d73-dbcf3cf89669"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d08ca5ec-06e0-413c-8346-d5046fc34d1a">
+                    <propertyInstance
+                      Id="33bf0268-6e93-4959-919d-7b5a6871c3e2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a62d897d-1dbc-49d0-bf80-f07d5cf781d3">
+                    <propertyInstance
+                      Id="1adabe78-3825-4870-af13-b9223ad5936e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d12f9806-896d-4ffd-a43b-cd2f9db9946b">
+                    <propertyInstance
+                      Id="b2d2acb3-4dd5-4402-a4be-47fef6692826"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ded562eb-15eb-421f-baca-d81d5b8047d8">
+                    <propertyInstance
+                      Id="26ccf3df-b4ae-46c6-9d45-a08055dbaab9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="59d6b5cb-92d0-409f-b237-b4c33aaf7265"
+            name="CheckForWebServerDosAttack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6bc5ea53-e26f-4b7f-8918-1604d0e62c4c"
+                  name="webServerAddress"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="baa97a70-5e40-4cad-a892-b75dd418723b"
+                  name="threshold"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="21f85772-6ed5-4714-a67b-1cb2152765ea"
+                  name="analysisWindow"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f03c4582-a8fc-494d-ad2a-2fda5587f507"
+                      LastKnownName="Nullable&lt;Int32‎&gt;"
+                      LastKnownLocation="Package3_0851.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b9559f78-b16c-437a-b971-c69021f0dcef"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="IdsModels.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

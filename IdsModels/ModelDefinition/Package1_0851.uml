@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="7d83bef4-a3d8-4c93-b3e9-64a016a06e24"
+  name="Common"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="b0ad6778-c181-48f3-a7fa-5c9c1290de62"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DIds.Common"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8d08fc78-d0df-44e5-9514-d4156705dbf7"
+        LastKnownName="Analysers"
+        LastKnownLocation="Package2_0851.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0d8e83c3-a961-4706-b688-e59c095019f6"
+        LastKnownName="Interfaces"
+        LastKnownLocation="Package6_0851.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="3aa0faf6-7aa6-4c3f-9cfe-b4d9b1ddcab0"
+        LastKnownName="Data"
+        LastKnownLocation="Package7_0851.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="895882a2-c3aa-4ca7-b4be-8397de0f484d"
+        LastKnownName="Reporters"
+        LastKnownLocation="Package_0855.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="14aa4304-0523-4e48-b59a-97eb369c0824"
+        LastKnownName="Sensors"
+        LastKnownLocation="Package_1707.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="354a353e-6856-44ea-b075-463819ce661e"
+        name="CaptureDeviceDescription"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="9ad02e41-822c-4f05-aa02-f4f6c776e05d"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3DCaptureDeviceDescription"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d2fadf0e-4576-48c8-a2dc-047729caa5a1"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6af8f352-c8f3-4704-9d94-1004d5b3afd3">
+                <propertyInstance
+                  Id="02e454cf-8920-44dd-a0c3-c82bf3068bd4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eb7d470a-3290-4b21-b0b7-5c5c5bfc28f8">
+                <propertyInstance
+                  Id="4b77d823-1035-45f2-a299-319dbeaf98ac"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9a3d0996-acbe-4fa0-bcae-c4af52416427">
+                <propertyInstance
+                  Id="7ce51c33-0b56-4519-926d-3f42196f7a9c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="394c3669-ce02-49d2-8f88-856bf31fb4d0">
+                <propertyInstance
+                  Id="a921452f-1b85-48ad-8111-fc43c25d3c6b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b0d6f396-3370-4c4d-88ea-761d8f2295f5">
+                <propertyInstance
+                  Id="c36fc72f-6f78-4462-a6ac-4918299304ad"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="b27bedfa-0527-4e7f-9706-bc5956b3f201"
+        name="SensorMode"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="96013bb9-e97a-4262-81f4-525dff15ffd2"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fshane.murnion%2FDocuments%2Fshane%2Fedinburgh%2FCSN11117 E-Security%2FIDS%2FCommon%2FSensors%2Fbin%2FDebug%2FIds.Common.dll&quot; Namespace%3DIds.Common Type%3D(Name%3DSensorMode ParentType%3DEnumerations)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="20f01697-ee22-4559-bd06-47b4feeca837"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6a19878f-9449-440d-a126-b13e718a07fa">
+                <propertyInstance
+                  Id="d67e6bc7-1c57-41a1-9ee6-c5110ca02a23"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d6e77f77-9e37-4ef2-8c7c-fdb4ef03a60c">
+                <propertyInstance
+                  Id="5d3c8965-28ce-4c50-bafa-52aaddfd318f"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ebeb2644-56a6-4b9f-9739-662056994e56">
+                <propertyInstance
+                  Id="cb849e15-3f7b-4f65-896b-ac254396d450"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ed7ab446-889f-4209-8aae-17003aad3e70"
+        LastKnownName="Idmef"
+        LastKnownLocation="Package_1726.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
